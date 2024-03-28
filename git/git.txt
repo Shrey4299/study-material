@@ -49,3 +49,9 @@ Miscellaneous:
 - git stash apply: Apply stashed changes to the working directory.
 - git clean -n: Show files in the working directory that are not tracked by Git.
 - git clean -f: Remove untracked files from the working directory.
+
+
+Additional Commands:
+- git branch -M main: Rename the current branch to "main".
+- git remote add origin <repository-url>: Add a remote named "origin" with the specified URL.
+- git push -u origin main: Push the local changes to the "main" branch of the remote named "origin".
