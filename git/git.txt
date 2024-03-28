@@ -32,12 +32,15 @@ Working with Remotes:
 - git remote -v: List all configured remote repositories.
 - git pull <remote> <branch>: Fetch changes from a remote repository and merge them.
 - git push <remote> <branch>: Push local changes to a remote repository.
+- git pull --force origin shrey
+
 
 Undoing Changes:
 - git reset <file>: Unstage changes for a specific file.
 - git checkout -- <file>: Discard changes in the working directory for a specific file.
 - git revert <commit>: Create a new commit that undoes changes made by a specific commit.
 - git reset --hard <commit>: Reset the current branch to a specific commit and discard all changes.
+- git revert HEAD~2: Git will create a new commit that effectively undoes the changes introduced by the last two commits. 
 
 Tagging:
 - git tag <tag-name> <commit>: Create a lightweight tag for a specific commit.
