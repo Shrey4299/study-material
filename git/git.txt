@@ -1,0 +1,51 @@
+Git Command Cheat Sheet
+
+Configuring Git:
+- git config --global user.name "Your Name": Set your global username.
+- git config --global user.email "your.email@example.com": Set your global email.
+- git config --global core.editor "editor": Set your preferred text editor for Git.
+
+Creating Repositories:
+- git init: Initialize a new Git repository locally.
+- git clone <repository-url>: Clone a repository from a remote source.
+
+Basic Snapshotting:
+- git add <file>: Add a specific file to the staging area.
+- git add .: Add all changed files to the staging area.
+- git commit -m "Commit message": Commit staged changes with a message.
+
+Branching & Merging:
+- git branch: List all local branches.
+- git branch <branch-name>: Create a new branch.
+- git checkout <branch-name>: Switch to a different branch.
+- git checkout -b <branch-name>: Create and switch to a new branch.
+- git merge <branch-name>: Merge changes from one branch into the current branch.
+- git branch -d <branch-name>: Delete a branch.
+
+Inspecting & Comparing:
+- git status: Show the status of the working directory and staging area.
+- git log: Display the commit history.
+- git diff: Show changes between commits, commit and working tree, etc.
+
+Working with Remotes:
+- git remote add <name> <url>: Add a new remote repository.
+- git remote -v: List all configured remote repositories.
+- git pull <remote> <branch>: Fetch changes from a remote repository and merge them.
+- git push <remote> <branch>: Push local changes to a remote repository.
+
+Undoing Changes:
+- git reset <file>: Unstage changes for a specific file.
+- git checkout -- <file>: Discard changes in the working directory for a specific file.
+- git revert <commit>: Create a new commit that undoes changes made by a specific commit.
+- git reset --hard <commit>: Reset the current branch to a specific commit and discard all changes.
+
+Tagging:
+- git tag <tag-name> <commit>: Create a lightweight tag for a specific commit.
+- git tag -a <tag-name> <commit> -m "Tag message": Create an annotated tag for a specific commit.
+- git show <tag-name>: Display information about a specific tag.
+
+Miscellaneous:
+- git stash: Stash changes in the working directory.
+- git stash apply: Apply stashed changes to the working directory.
+- git clean -n: Show files in the working directory that are not tracked by Git.
+- git clean -f: Remove untracked files from the working directory.

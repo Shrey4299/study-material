@@ -1,0 +1,53 @@
+================================================================================
+Docker Commands Cheat Sheet
+================================================================================
+
+1. docker build -t <image_name>:<tag> <path_to_dockerfile>
+   - Build an image from a Dockerfile.
+   - -t: Tag the resulting image with a name and optionally a tag.
+
+2. docker run <image_name>:<tag>
+   - Run a command in a new container based on the specified image.
+   - This command starts a new container from the specified image.
+
+3. docker ps
+   - List running containers.
+   - Displays a list of all running containers along with their details such as container ID, image, status, ports, etc.
+
+4. docker images
+   - List images.
+   - Displays a list of all Docker images available on the system.
+
+5. docker pull <image_name>:<tag>
+   - Pull an image or a repository from a registry.
+   - Downloads the specified image from a registry.
+
+6. docker push <image_name>:<tag>
+   - Push an image or a repository to a registry.
+   - Uploads the specified image to a registry.
+
+7. docker stop <container_id>
+   - Stop one or more running containers.
+   - Stops the specified container(s).
+
+8. docker rm <container_id>
+   - Remove one or more containers.
+   - Removes the specified container(s).
+
+9. docker rmi <image_id>
+   - Remove one or more images.
+   - Removes the specified image(s).
+
+10. docker exec -it <container_id> <command>
+    - Run a command in a running container.
+    - Executes the specified command inside the specified container.
+
+11. docker-compose up
+    - Start services defined in a docker-compose.yml file.
+    - Creates and starts containers for all services defined in the docker-compose.yml file.
+
+12. docker-compose down
+    - Stop and remove containers defined in a docker-compose.yml file.
+    - Stops and removes all containers created by docker-compose up.
+
+================================================================================
