@@ -5,3 +5,6 @@ commit 1
 abcd 
 
 dcba
+
+
+sample by bhrat
