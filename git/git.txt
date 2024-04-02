@@ -52,6 +52,9 @@ Miscellaneous:
 - git stash apply: Apply stashed changes to the working directory.
 - git clean -n: Show files in the working directory that are not tracked by Git.
 - git clean -f: Remove untracked files from the working directory.
+- git commit --amend -m "New commit message"
+- git commit --amend -m 
+
 
 
 Additional Commands:

@@ -2,6 +2,4 @@ this is shrey
 
 commit 1
 
-abcd 
-
-dcba
+commit 2
