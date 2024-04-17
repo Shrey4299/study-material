@@ -23,3 +23,5 @@ print("UTC Datetime:", utc_datetime)
 print("Local Datetime:", local_datetime)
 print("Current Time in", time_zone_str, ":", current_time)
 print("UTC Offset:", offset_hours, "hours")
+
+print(datetime.now())
