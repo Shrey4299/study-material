@@ -50,4 +50,11 @@ Docker Commands Cheat Sheet
     - Stop and remove containers defined in a docker-compose.yml file.
     - Stops and removes all containers created by docker-compose up.
 
+13. sudo docker-compose up --build
+    - if files are modified in the code
+
+14. sudo docker system prune -a
+    - to clear all the unwanted container
+
+
 ================================================================================

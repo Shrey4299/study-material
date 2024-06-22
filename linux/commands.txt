@@ -1,0 +1,120 @@
+### Basic File and Directory Management
+ls       # List directory contents
+ls -a    # List directory contents hidden also
+cd       # Change the current directory
+pwd      # Print the current working directory
+mkdir    # Create a new directory
+rmdir    # Remove an empty directory
+rm       # Remove files or directories
+rm -r      # Remove files or directories
+cp       # Copy files or directories
+mv       # Move or rename files or directories
+touch    # Create an empty file or update the timestamp of a file
+cat      # Concatenate and display file contents
+more     # View file contents one screen at a time
+less     # View file contents with backward movement
+head     # Display the beginning of a file
+tail     # Display the end of a file
+find     # Search for files in a directory hierarchy
+diff
+
+### File Permissions and Ownership
+chmod    # Change file permissions
+chown    # Change file owner and group
+chgrp    # Change group ownership
+
+### System Information
+man      # To view the detail of any software
+where
+which
+uname    # Print system information
+df       # Report file system disk space usage
+df -h    # Report file  disk space usage in a human-readable format
+du       # Estimate file space usage
+top      # Display tasks and system resource usage
+htop     # Interactive process viewer
+ps       # Report a snapshot of current processes
+free     # Display memory usage
+uptime   # Tell how long the system has been running
+whoami   # Print the current user id and name
+id       # Print user and group information
+hostname # Show or set the system’s hostname
+
+### Networking
+ping     # Send ICMP ECHO_REQUEST to network hosts
+ifconfig # Configure a network interface
+ip       # Show/manipulate routing, devices, policy routing, and tunnels
+netstat  # Print network connections, routing tables, interface statistics
+netstat -tulpn # Print network connections, routing tables, interface statistics
+ss       # Utility to investigate sockets
+wget     # Non-interactive network downloader
+curl     # Transfer data from or to a server
+ufw      # firewall enabling disabling
+
+### Package Management (varies by distribution)
+apt-get  # Handle packages on Debian-based systems
+yum      # Package manager for RPM-based distributions
+dnf      # Modern package manager for RPM-based distributions
+rpm      # RPM package manager
+
+### Text Processing
+grep     # Print lines matching a pattern
+awk      # Pattern scanning and processing language
+sed      # Stream editor for filtering and transforming text
+cut      # Remove sections from each line of files
+sort     # Sort lines of text files
+uniq     # Report or omit repeated lines
+tr       # Translate or delete characters
+wc       # Print newline, word, and byte counts for each file
+diff     # Compare files line by line
+
+### Compression and Archiving
+tar      # Store, list, or extract files in an archive
+gzip     # Compress files
+gunzip   # Decompress files
+zip      # Package and compress files
+unzip    # Extract compressed files
+
+### Disk Usage and Management
+mount    # Mount a filesystem
+umount   # Unmount a filesystem
+fdisk    # Partition table manipulator for Linux
+mkfs     # Build a Linux file system
+fsck     # File system consistency check and repair
+
+### User Management
+adduser  # Add a user to the system
+useradd  # Create a new user or update default new user information
+deluser  # Remove a user from the system
+usermod  # Modify a user account
+passwd   # Update a user's password
+groups   # Print the groups a user is in
+su       # to change user
+
+### Process Management
+kill     # Send a signal to a process
+kill -9 pid # Kill a process
+killall  # Kill processes by name
+pkill    # Send signals to processes based on name and other attributes
+bg       # Place a job in the background
+fg       # Bring a job to the foreground
+jobs     # List active jobs
+nice     # Run a command with modified scheduling priority
+renice   # Alter priority of running processes
+
+### System Monitoring and Performance
+vmstat   # Report virtual memory statistics
+iostat   # Report CPU and input/output statistics
+sar      # Collect, report, or save system activity information
+
+### Miscellaneous
+alias    # Create an alias for a command
+unalias  # Remove an alias
+echo     # Display a line of text
+date     # Display or set the system date and time
+cal      # Display a calendar
+history  # Show command history
+clear    # Clear the terminal screen
+reboot   # Reboot the system
+shutdown # Halt, power off, or reboot the system
+sudo shutdown -h now #shutdown computer now

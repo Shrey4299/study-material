@@ -1,0 +1,94 @@
+### Starting and Exiting tmux
+tmux                # Start a new tmux session
+tmux new -s session_name  # Start a new tmux session with a name
+tmux attach/a         # Attach to the last session
+tmux attach -t session_name  # Attach to a specific session
+tmux detach         # Detach from the current session
+tmux kill-session   # Kill the current session
+tmux kill-session -t session_name  # Kill a specific session
+
+### Sessions
+tmux list-sessions  # List all sessions
+tmux new-session -s session_name  # Create a new session with a name
+tmux rename-session -t old_name new_name  # Rename a session
+tmux switch -t session_name  # Switch to a specific session
+
+### Windows
+tmux new-window     # Create a new window
+tmux new-window -n window_name  # Create a new window with a name
+tmux rename-window  # Rename the current window
+tmux select-window -t window_index  # Switch to a specific window
+tmux list-windows   # List all windows
+tmux kill-window    # Kill the current window
+tmux kill-window -t window_index  # Kill a specific window
+
+### Panes
+tmux split-window   # Split the current pane horizontally
+tmux split-window -v  # Split the current pane vertically
+tmux select-pane -t pane_index  # Switch to a specific pane
+tmux resize-pane -D  # Resize the pane down
+tmux resize-pane -U  # Resize the pane up
+tmux resize-pane -L  # Resize the pane left
+tmux resize-pane -R  # Resize the pane right
+tmux resize-pane -D 10  # Resize the pane down by 10 lines
+tmux resize-pane -U 10  # Resize the pane up by 10 lines
+tmux resize-pane -L 10  # Resize the pane left by 10 lines
+tmux resize-pane -R 10  # Resize the pane right by 10 lines
+tmux kill-pane      # Kill the current pane
+tmux kill-pane -t pane_index  # Kill a specific pane
+
+### Synchronizing Panes
+tmux setw synchronize-panes on   # Enable synchronized input to all panes
+tmux setw synchronize-panes off  # Disable synchronized input to all panes
+
+### Copy Mode
+tmux copy-mode     # Enter copy mode
+tmux send-keys -X scroll-up  # Scroll up in copy mode
+tmux send-keys -X scroll-down  # Scroll down in copy mode
+tmux send-keys -X copy-selection  # Copy the selected text in copy mode
+
+### Buffers
+tmux list-buffers  # List all buffers
+tmux show-buffer   # Show the contents of the specified buffer
+tmux save-buffer buffer_name file_path  # Save the specified buffer to a file
+tmux delete-buffer buffer_name  # Delete the specified buffer
+tmux paste-buffer  # Paste the most recently copied buffer
+
+### Miscellaneous
+tmux source-file ~/.tmux.conf  # Reload the tmux configuration file
+tmux list-keys    # List all key bindings
+tmux list-commands  # List all tmux commands
+tmux info         # Show information about the current tmux session
+
+### tmux Prefix Key (default is Ctrl-b)
+Prefix + c        # Create a new window
+Prefix + ,        # Rename the current window
+Prefix + w        # List windows
+Prefix + n        # Next window
+Prefix + p        # Previous window
+Prefix + &        # Kill the current window
+Prefix + %        # Split the current pane vertically
+Prefix + "        # Split the current pane horizontally
+Prefix + o        # Switch to the next pane
+Prefix + ;        # Switch to the last pane
+Prefix + x        # Kill the current pane
+Prefix + z        # Toggle pane zoom
+Prefix + [        # Enter copy mode
+Prefix + ]        # Paste the buffer
+Prefix + d        # Detach from the session
+Prefix + t        # Show the time
+Prefix + ?        # List key bindings
+Prefix + q        # To see pane number
+
+### Example Key Bindings
+# Remap prefix to Ctrl-a
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
+# Split panes using | and -
+bind-key | split-window -h
+bind-key - split-window -v
+
+# Reload tmux config
+bind-key r source-file ~/.tmux.conf \; display-message "Config reloaded!"
