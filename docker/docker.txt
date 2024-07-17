@@ -56,5 +56,12 @@ Docker Commands Cheat Sheet
 14. sudo docker system prune -a
     - to clear all the unwanted container
 
+15. docker stop $(docker ps -q)
+    - stop all containers
+
+16. docker rm $(docker ps -q)
+    - remove all containers
+
+
 
 ================================================================================

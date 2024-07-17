@@ -1,0 +1,278 @@
+#!/bin/bash
+
+# Shell Scripting Basics
+
+## 1. Introduction to Shell Scripting
+# Shell scripting is a way to automate tasks using a script written for the shell, or command line interpreter, of an operating system. Shell scripts can be used to perform a variety of tasks, from simple commands to complex operations.
+
+## 2. Basic Commands
+# echo: Print text to the terminal.
+echo "Hello, World!"
+
+# ls: List directory contents.
+ls
+
+## 3. Script Structure
+# A basic script starts with a shebang (#!/bin/bash) to specify the shell to use.
+echo "
+#!/bin/bash
+echo \"Hello, World!\"
+"
+
+## 4. Permissions
+# To set executable permissions:
+chmod +x script_name.sh
+
+## 5. Running Scripts
+# - bash script_name
+# - ./script_name
+# - path/to/script_name
+
+## 6. Variables
+# Define variables:
+VAR_NAME=value
+VAR_NAME=$(hostname)
+echo $VAR_NAME
+
+# Example:
+echo "
+#!/bin/bash
+a=10
+name=\"Prashant\"
+age=28
+echo \"My name is \$name and age is \$age\"
+name=\"Paul\"
+echo \"My name is \$name\"
+HOSTNAME=\$(hostname)
+echo \"Name of this machine is \$HOSTNAME\"
+"
+
+## 7. Constant Variables
+# Declare readonly variables:
+readonly var_name="Hi"
+
+## 8. Arrays
+# Define and manipulate arrays:
+myArray=(1 2 Hello "Hey man")
+echo "\${myArray[0]}"  # Access elements
+echo "\${#myArray[*]}"  # Length of array
+myArray+=(568)  # Append to array
+
+## 9. Key-Value Pairs
+# Declare associative arrays:
+declare -A myArray
+myArray=([name]=Paul [age]=20)
+echo "\${myArray[name]}"
+
+#10. String Operations
+
+# Manipulate strings:
+myVar="Hello World!"
+length=\${#myVar}
+upper=\${myVar^^}
+lower=\${myVar,,}
+replace=\${myVar/World/Buddy}
+slice=\${myVar:6:11}
+
+## 11. Input from User
+# Read user input:
+read var_name
+read -p "Your name: " NAME
+
+## 12. Conditions
+# Example of conditional statements:
+read -p "Enter the student's marks: " marks
+
+if [[ \$marks -ge 90 ]]; then
+  echo "Grade: A"
+elif [[ \$marks -ge 80 ]]; then
+  echo "Grade: B"
+elif [[ \$marks -ge 70 ]]; then
+  echo "Grade: C"
+elif [[ \$marks -ge 60 ]]; then
+  echo "Grade: D"
+else
+  echo "Grade: F"
+fi
+# Operators: -gt, -lt, -ge, -le, -ne, -eq
+# if [[ $num -gt 10 && $((num % 2)) -eq 0 ]]
+# if [[ $num -lt 5 || $((num % 2)) -ne 0 ]]
+# cond1 && cond2 || cond3
+# [[ $age -gt 18]] && echo "Adult" || echo "Minor"
+
+11. loops
+
+fruits=("Apple" "Banana" "Orange" "Grapes")
+
+echo "Printing fruits using for loop:"
+for fruit in "${fruits[@]}"
+do
+    echo "Fruit: $fruit"
+done
+
+
+count=1
+
+echo "Counting from 1 to 5 using while loop:"
+while [ $count -le 5 ]
+do
+    echo "Count: $count"
+    ((count++))
+done
+
+12. infinite loop
+
+while true
+do
+	echo "Hi"
+	sleep 2s
+done
+
+13. awk user 
+- to get rid of first line
+cat test.csv | awk 'NR!=1 {print}'
+
+14. function
+
+addition 20 30
+addition() {
+    sum=$(( $1 + $2 ))
+    echo "Addition: $1 + $2 = $sum"
+}
+
+15. Arguments in script
+
+#myscript.sh arg1 arg2..
+How to access these arguments inside
+our script?
+To get no. of arguments : $#
+To display all arguments : $@
+To use or display a argument: $1 $2 ..
+
+for arg in $@
+do
+echo "Argument is $arg"
+done
+
+16. Shifing Arguments
+
+SHIFT
+When we pass multiple
+arguments, we can shift.
+ABC
+shift
+BC
+
+17. usefull concepts
+
+break - to stop the loop
+continue - to stop current iteration
+of loop and start next iteration
+
+sleep - to create delay between two
+executions ex: sleep 1s/1m
+exit - to stop script at a point
+exit status $? - gives you status of
+previous command if that was
+successful
+
+18. connectivity check
+
+read -p "which site you want to check? " site
+ping -c 1 $site
+# sleep 5s
+if [[ $? -eq 0 ]]
+then
+echo "Successfully connected to $site"
+else
+echo "Unable to connect $site"
+fi
+
+19. Check if file/dir exists
+
+if [ -d folder_name] If folder exists
+if [ ! -d folder_name] If folder not exists
+if [ -f file_name] If file exists
+if [ ! -f file_name] If file not exists
+
+20. Bash Variables
+
+RANDOM - A random integer between 0
+and 32767 is generated
+UID - User ID of the user logged in
+
+#!/bin/bash
+#Generating a random no. between 1 to 6
+
+NO=$(( $RANDOM %6 + 1 ) )
+echo "Number is $NO"
+
+21. To save output in file
+date  > all_files.txt (rewrite)
+pwd  >> all_files.txt (append)
+date  > all_files.txt (rewrite)
+pwd  >> all_files.txt (append)
+ping -c 1 $site &> /dev/null (not to print)
+echo "The name of the script is: ${0}" (print the name of the script)
+logger "message" to save log in some file
+
+22. Debuggin 
+set -x (step by step output)
+set -e (stop when error occur )
+ nohup ./13_loops.sh & (To run in background)
+
+23. Automating
+
+For scheduling only one time, use AT
+at 12:09 PM / Mon Jul  1 08:41:25 PM IST 2024
+<your_command>
+Ctrl + D
+atq to check scheduled job
+atrm <id> to remove the schedule
+
+for cheduling many time
+
+To check the existing jobs - crontab -1
+To add new job crontab -e
+**** cd /home/paul/scripts && ./create_file.sh
+stars denotes time contab guru
+0 5 * * * /home/adcuratio/Downloads/delete_xlsx.sh
+
+
+#!/bin/bash
+
+# Set explicit environment variables
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Define absolute paths
+DIR="/home/adcuratio/Downloads"
+LOGFILE="/home/adcuratio/Downloads/cron_job.log"
+
+# Define files to keep
+KEEP_FILES=("HR bulk (1).xlsx" "sample_add_bulk_jc_jan_24_16 (1).xlsx")
+
+# Function to check if a file should be deleted
+should_delete() {
+    local filename="$1"
+    for keep_file in "${KEEP_FILES[@]}"; do
+        if [[ "$filename" == "$keep_file" ]]; then
+            return 1 # Do not delete this file
+        fi
+    done
+    return 0 # Delete this file
+}
+
+# Find and delete .xlsx files except for the ones to keep
+for file in "$DIR"/*.xlsx; do
+    filename=$(basename "$file")
+    if should_delete "$filename"; then
+        echo "Deleting $filename at $(date)" >> "$LOGFILE"
+        /bin/rm "$file"
+    else
+        echo "Keeping $filename at $(date)" >> "$LOGFILE"
+    fi
+done
+
+
+
+

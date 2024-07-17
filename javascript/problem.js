@@ -1,25 +1,15 @@
-const nums = [1, 3, 6, 7,7,7,7, 8, 3, 9, 10, 10, 10, 11, 11];
-const numIndices = new Map();
+const tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numberOfWorkers = 4;
 
-for (let i = 0; i < nums.length; i++) {
-  if (numIndices.has(nums[i])) {
-    numIndices.set(nums[i], numIndices.get(nums[i]) + 1);
-  } else {
-    numIndices.set(nums[i], 1);
+function divideTasks(tasks, numberOfWorkers) {
+  const result = Array.from({ length: numberOfWorkers }, () => []);
+
+  for (let i = 0; i < tasks.length; i++) {
+    result[i % numberOfWorkers].push(tasks[i]);
   }
+
+  return result;
 }
 
-console.log(numIndices);
-
-let max_val = 0;
-let max_key = 0;
-
-for (const [key, value] of numIndices) {
-  if (value > max_val) {
-    max_val = Math.max(max_val, value);
-    console.log(`Key: ${key} and ${value}`);
-    max_key = key;
-  }
-}
-
-console.log(max_key);
+const dividedTasks = divideTasks(tasks, numberOfWorkers);
+console.log(dividedTasks);

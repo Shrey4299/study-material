@@ -8,7 +8,7 @@ rmdir    # Remove an empty directory
 rm       # Remove files or directories
 rm -r      # Remove files or directories
 cp       # Copy files or directories
-mv       # Move or rename files or directories
+mv       # Move or rename files or directories  ( EX.  mv 25_random_uid.sh new_filename.sh)
 touch    # Create an empty file or update the timestamp of a file
 cat      # Concatenate and display file contents
 more     # View file contents one screen at a time
@@ -17,16 +17,67 @@ head     # Display the beginning of a file
 tail     # Display the end of a file
 find     # Search for files in a directory hierarchy
 diff
+nano -l filename # open editor with line numbers
+
 
 ### File Permissions and Ownership
+
+there  are basically three type of permissions that r - read , w-write, x - execute
+
+Permissions (rwx) levels
+- U - yourself (current user)
+- g- group in which user belongs to
+- o-others
+- a-all 
+
+# to see file permissions 
+- ls -ltr
+
+# - rwx rwx rwx 
+
+- (-) for file , d  for directory
+- first is permissions for the owner
+- second is permissions for the group
+- third is permissions for the others
+
+# how to change file permissions
+
+chmod u+r <file_name> (For adding permission)
+chmod u-r <file_name> (For removing permission)
+chmod ugo+r <file_name>
+chmod ugo-r <file_name>
+chmod a+rwx <file_name> (Adding permission for all)
+
+# root can change permissin of all but other can not change
+
 chmod    # Change file permissions
-chown    # Change file owner and group
-chgrp    # Change group ownership
+chown    # Change file owner and group (sudo chown root permission.txt)
+chgrp    # Change group ownership (sudo chgrp root permission.txt)
+
+# Permissions can also be represented numerically. Each set of permissions is represented by a number from 0 to 7, derived from the binary representation of the permissions:
+
+Read (r) is represented by 4.
+Write (w) is represented by 2.
+Execute (x) is represented by 1.
+The sum of these values gives the permission code for each set of users:
+
+7 (read, write, execute) = rwx = 4 + 2 + 1
+6 (read, write) = rw- = 4 + 2
+5 (read, execute) = r-x = 4 + 1
+4 (read) = r-- = 4
+3 (write, execute) = -wx = 2 + 1
+2 (write) = -w- = 2
+1 (execute) = --x = 1
+0 (no permissions) = --- = 0
+
+Example : chmod 755 filename
+
+
 
 ### System Information
 man      # To view the detail of any software
-where
-which
+where    # directory of app
+which    # directory of app
 uname    # Print system information
 df       # Report file system disk space usage
 df -h    # Report file  disk space usage in a human-readable format
@@ -34,7 +85,7 @@ du       # Estimate file space usage
 top      # Display tasks and system resource usage
 htop     # Interactive process viewer
 ps       # Report a snapshot of current processes
-free     # Display memory usage
+free     # Display memory usage (free -mt | grep "Total" | awk '{print $4}')
 uptime   # Tell how long the system has been running
 whoami   # Print the current user id and name
 id       # Print user and group information
@@ -58,7 +109,8 @@ dnf      # Modern package manager for RPM-based distributions
 rpm      # RPM package manager
 
 ### Text Processing
-grep     # Print lines matching a pattern
+grep     # Print lines matching a pattern (free -mt | grep "Total" | awk '{print $4}')
+egrep    # Print lines excluding matching a pattern (df -H | egrep -v "Filesystem|tmpfs")
 awk      # Pattern scanning and processing language
 sed      # Stream editor for filtering and transforming text
 cut      # Remove sections from each line of files
@@ -118,3 +170,11 @@ clear    # Clear the terminal screen
 reboot   # Reboot the system
 shutdown # Halt, power off, or reboot the system
 sudo shutdown -h now #shutdown computer now
+ping -c 1 $site #ping to the site or server
+date  > all_files.txt (rewrite)
+pwd  >> all_files.txt (append)
+ping -c 1 $site &> /dev/null (not to print)
+
+
+
+
