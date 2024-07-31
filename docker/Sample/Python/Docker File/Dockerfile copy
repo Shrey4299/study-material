@@ -1,0 +1,26 @@
+# pull the official docker image
+FROM python:3.9.6-buster
+
+# set work directory
+WORKDIR /fm-lla-cdc-ebs-api/src
+ADD requirements.txt  /fm-lla-cdc-ebs-api/src
+
+# set env variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# install system dependencies
+RUN apt-get update \
+    && apt-get -y install netcat gcc vim redis-server alembic\
+    && apt-get autoclean && rm -rf /var/lib/apt/lists/* \
+    && pip3 install --upgrade pip \
+    && pip3 install -r requirements.txt
+
+
+# # copy project
+ADD . /fm-lla-cdc-ebs-api
+
+# Copy the environment file to the desired location
+COPY ./fm.env /fm-lla-cdc-ebs-api/src/fm.env
+
+

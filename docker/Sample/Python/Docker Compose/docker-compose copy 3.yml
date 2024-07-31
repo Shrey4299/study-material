@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  fastapi:
+    container_name: fm-lla-cdc-esb-api
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    command: uvicorn main:app --workers 1 --host 0.0.0.0 --port 9003
+    network_mode: host
+    # restart: always
+    # ports:
+    #   - "9003:8000"
+  # nginx:
+  #   image: adcuratio/folksmedia-nginx:lla-esb-service-prod
+  #   container_name: nginx-fm-lla-cdc-esb-api
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./logs/:/var/log/nginx/
+  #   depends_on:
+  #     - fastapi

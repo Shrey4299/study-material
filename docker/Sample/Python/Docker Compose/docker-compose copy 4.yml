@@ -1,0 +1,31 @@
+version: '3.7'
+services:
+  redis:
+    image: redis
+    container_name: redis
+
+  search:
+    #image: adcuratio/folkmedia-content-search:prod-03-04-2023
+    image: folksmediadev/folkmedia-content-search:prod-05-12-2023
+    # container_name: search
+    restart: always
+    ports:
+      - "8000:8000"
+    deploy:
+      replicas: 5
+    env_file:
+      - fm-search.env
+    depends_on:
+      - redis
+
+  nginx:
+    #image: adcuratio/folkmedia-content-search:nginx
+    image: folksmediadev/folkmedia-content-search:nginx-12-15-2023
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./logs/:/var/log/nginx/
+    depends_on:
+      - search

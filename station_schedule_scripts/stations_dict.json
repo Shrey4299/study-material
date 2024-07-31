@@ -1,0 +1,1712 @@
+{
+    "epgProvider:st.453975833": {
+        "id_2.0": 10691781323,
+        "call_sign": "WTINDT3",
+        "station_name": "WAPA 3",
+        "packaged_service _description": "WAPA3"
+    },
+    "epgProvider:st.38521217": {
+        "id_2.0": 69025378,
+        "call_sign": "WKAQDT",
+        "station_name": "WKAQ HDTV Canal 2 / Tu Canal",
+        "packaged_service _description": "Telemundo (WKAQ)"
+    },
+    "epgProvider:st.148140788": {
+        "id_2.0": 699130132,
+        "call_sign": "WMTJDT",
+        "station_name": "WMTJDT HDTV",
+        "packaged_service _description": "Sistema TV (WMTJ)"
+    },
+    "epgProvider:st.145642589": {
+        "id_2.0": 69025363,
+        "call_sign": "WAPADT",
+        "station_name": "WAPA HDTV",
+        "packaged_service _description": "Wapa TV (WAPA)"
+    },
+    "epgProvider:st.429188353": {
+        "id_2.0": 9116015974,
+        "call_sign": "WORADT4",
+        "station_name": "WORA Telecinco",
+        "packaged_service _description": "InterOnline HD"
+    },
+    "epgProvider:st.148496436": {
+        "id_2.0": 69034028,
+        "call_sign": "TCMHD",
+        "station_name": "Turner Classic Movies HDTV",
+        "packaged_service _description": "Turner Classic Movies"
+    },
+    "epgProvider:st.449007408": {
+        "id_2.0": 10646061442,
+        "call_sign": "WOSTDT3HD",
+        "station_name": "WOST ShopHQ HDTV",
+        "packaged_service _description": "SHOP HQ"
+    },
+    "epgProvider:st.148140794": {
+        "id_2.0": 69024595,
+        "call_sign": "WIPRDT",
+        "station_name": "WIPR HDTV",
+        "packaged_service _description": "WIPR TV (WIPR)"
+    },
+    "epgProvider:st.448409523": {
+        "id_2.0": 10603322717,
+        "call_sign": "EBNZRHD",
+        "station_name": "Ebenezer HD",
+        "packaged_service _description": "Ebenezer HD"
+    },
+    "epgProvider:st.148140792": {
+        "id_2.0": 69033126,
+        "call_sign": "WSTEDT",
+        "station_name": "WSTEDT SuperSiete / Tele-Isla (TLI) HDTV",
+        "packaged_service _description": "Teleisla (WSTE)"
+    },
+    "epgProvider:st.23660114": {
+        "id_2.0": 69023927,
+        "call_sign": "CARACOLI",
+        "station_name": "Caracol TV Internacional",
+        "packaged_service _description": "Caracol TV"
+    },
+    "epgProvider:st.446729268": {
+        "id_2.0": 10467432198,
+        "call_sign": "WKAQDT2HD",
+        "station_name": "WKAQ Punto 2 HDTV",
+        "packaged_service _description": "Punto2 HD (WKAQ-2)"
+    },
+    "epgProvider:st.361372466": {
+        "id_2.0": 621158183,
+        "call_sign": "AZINTERNHD",
+        "station_name": "Azteca Internacional HDTV",
+        "packaged_service _description": "AZ Mundo"
+    },
+    "epgProvider:st.142716572": {
+        "id_2.0": 69033244,
+        "call_sign": "CEM-LAT",
+        "station_name": "Cine Latino (US)",
+        "packaged_service _description": "CineLatino"
+    },
+    "epgProvider:st.37436944": {
+        "id_2.0": 69032761,
+        "call_sign": "MICRO",
+        "station_name": "Telemicro Internacional",
+        "packaged_service _description": "telemicro"
+    },
+    "epgProvider:st.345844436": {
+        "id_2.0": 3593268928,
+        "call_sign": "CABLEVISHD",
+        "station_name": "Cablevisi\u00f3n HDTV",
+        "packaged_service _description": "CableVisi?n (LO)"
+    },
+    "epgProvider:st.361371138": {
+        "id_2.0": 1725412410,
+        "call_sign": "DHCVHD",
+        "station_name": "Discovery Home & Health HDTV (CHARVZ)",
+        "packaged_service _description": "Discovery Home & Health Latinamerica"
+    },
+    "epgProvider:st.396486162": {
+        "id_2.0": 6412956600,
+        "call_sign": "DCWHD",
+        "station_name": "The Discovery Channel (Chile / Venezuela) HDTV",
+        "packaged_service _description": "Discovery Latam"
+    },
+    "epgProvider:st.38521346": {
+        "id_2.0": 69025491,
+        "call_sign": "WLIIDT",
+        "station_name": "WLII HDTV Teleonce 56",
+        "packaged_service _description": "Univisi?n PR - Liberty  (WLII)"
+    },
+    "epgProvider:st.66458709": {
+        "id_2.0": 69027993,
+        "call_sign": "NGCHD-E",
+        "station_name": "National Geographic Channel HDTV",
+        "packaged_service _description": "natgeousahd"
+    },
+    "epgProvider:st.60995359": {
+        "id_2.0": 1418992359,
+        "call_sign": "WTCVDT",
+        "station_name": "WTCV MegaTV HDTV",
+        "packaged_service _description": "Mega TV - Liberty  (WTCV)"
+    },
+    "epgProvider:st.315798035": {
+        "id_2.0": 1470093637,
+        "call_sign": "WMTJDT2",
+        "station_name": "WMTJ Kids",
+        "packaged_service _description": "PBS Kids"
+    },
+    "epgProvider:st.2471": {
+        "id_2.0": 69042697,
+        "call_sign": "WORO",
+        "station_name": "WORO Teleoro 13",
+        "packaged_service _description": "Tele Oro (WORO)"
+    },
+    "epgProvider:st.249634556": {
+        "id_2.0": 1310092995,
+        "call_sign": "WKAQDT3",
+        "station_name": "WKAQDT3 HDTV",
+        "packaged_service _description": "NBC PR  (WKAQ3)"
+    },
+    "epgProvider:st.147895924": {
+        "id_2.0": 69033222,
+        "call_sign": "WORADT",
+        "station_name": "ABC 5 Puerto Rico HDTV",
+        "packaged_service _description": "ABC 5 (WORA)"
+    },
+    "epgProvider:st.445919803": {
+        "id_2.0": 10405919465,
+        "call_sign": "WCCVDTHD",
+        "station_name": "WCCV Tiva TV HDTV",
+        "packaged_service _description": "Cadena Del Milagro HD (WCCV)"
+    },
+    "epgProvider:st.345672322": {
+        "id_2.0": 3576001396,
+        "call_sign": "WSEEDT-PRHD",
+        "station_name": "WSEE HDTV (Puerto Rico)",
+        "packaged_service _description": "CBS PR (WSEE)"
+    },
+    "epgProvider:st.219265341": {
+        "id_2.0": 69032731,
+        "call_sign": "MLBNETSZHD",
+        "station_name": "MLB Network Strike Zone HDTV",
+        "packaged_service _description": "MLB Strike Zone"
+    },
+    "epgProvider:st.410545484": {
+        "id_2.0": 7224220193,
+        "call_sign": "ACCHD",
+        "station_name": "ACC Network HDTV",
+        "packaged_service _description": "ACC Network HD"
+    },
+    "epgProvider:st.254633839": {
+        "id_2.0": 699135507,
+        "call_sign": "WSJX-LD",
+        "station_name": "WSJX HDTV",
+        "packaged_service _description": "FOX PR (WSJX)"
+    },
+    "epgProvider:st.1792154": {
+        "id_2.0": 69048946,
+        "call_sign": "HITN",
+        "station_name": "HITN-TV",
+        "packaged_service _description": "hitn"
+    },
+    "epgProvider:st.111008801": {
+        "id_2.0": 69031021,
+        "call_sign": "FXHD-E",
+        "station_name": "FX HDTV (East)",
+        "packaged_service _description": "FX"
+    },
+    "epgProvider:st.110901431": {
+        "id_2.0": 69030702,
+        "call_sign": "CNNHD",
+        "station_name": "Cable News Network HDTV",
+        "packaged_service _description": "CNN"
+    },
+    "epgProvider:st.149815971": {
+        "id_2.0": 69034030,
+        "call_sign": "CNHNHD",
+        "station_name": "HLN HDTV",
+        "packaged_service _description": "Headline News"
+    },
+    "epgProvider:st.148359703": {
+        "id_2.0": 69033981,
+        "call_sign": "MSNBCHD",
+        "station_name": "msnbc HDTV",
+        "packaged_service _description": "MSNBC"
+    },
+    "epgProvider:st.112219028": {
+        "id_2.0": 69030991,
+        "call_sign": "CNBCHD",
+        "station_name": "Consumer News & Business Channel HDTV",
+        "packaged_service _description": "CNBC"
+    },
+    "epgProvider:st.111551472": {
+        "id_2.0": 69046973,
+        "call_sign": "CNNESP",
+        "station_name": "Cable News Network en Espa\u00f1ol (USA)",
+        "packaged_service _description": "CNN En Espa?ol"
+    },
+    "epgProvider:st.38520471": {
+        "id_2.0": 376725991,
+        "call_sign": "WJPXDT",
+        "station_name": "WJPX Am\u00e9rica TeV\u00e9 Puerto Rico",
+        "packaged_service _description": "Am?rica Tev? (WJPX)"
+    },
+    "epgProvider:st.112734302": {
+        "id_2.0": 69030894,
+        "call_sign": "TWCHD",
+        "station_name": "The Weather Channel HDTV",
+        "packaged_service _description": "Weather Channel"
+    },
+    "epgProvider:st.125203636": {
+        "id_2.0": 69031686,
+        "call_sign": "LIFEHD-E",
+        "station_name": "Lifetime Television HDTV (East)",
+        "packaged_service _description": "Lifetime"
+    },
+    "epgProvider:st.246435903": {
+        "id_2.0": 1705604076,
+        "call_sign": "WRUADT",
+        "station_name": "WRUA Tiva TV",
+        "packaged_service _description": "Tiva TV (WRUA)"
+    },
+    "epgProvider:st.95147925": {
+        "id_2.0": 69030143,
+        "call_sign": "LIFEMNHD-E",
+        "station_name": "Lifetime Movies HDTV (East)",
+        "packaged_service _description": "Lifetime Movie Network"
+    },
+    "epgProvider:st.5802096": {
+        "id_2.0": 69021467,
+        "call_sign": "LIFERW",
+        "station_name": "Lifetime Real Women",
+        "packaged_service _description": "Lifetime Real Women"
+    },
+    "epgProvider:st.433935361": {
+        "id_2.0": 9476712291,
+        "call_sign": "WRFBDT4",
+        "station_name": "WRFB TELE 5.4 HDTV",
+        "packaged_service _description": "TELECINCO (WRFB)"
+    },
+    "epgProvider:st.109673805": {
+        "id_2.0": 69030731,
+        "call_sign": "USAHD-E",
+        "station_name": "USA Network HDTV (East)",
+        "packaged_service _description": "USA"
+    },
+    "epgProvider:st.24418624": {
+        "id_2.0": 69024381,
+        "call_sign": "TNTHD-E",
+        "station_name": "Turner Network Television HDTV (East)",
+        "packaged_service _description": "TNT"
+    },
+    "epgProvider:st.109917497": {
+        "id_2.0": 69026484,
+        "call_sign": "TBSHD-E",
+        "station_name": "TBS Superstation HDTV (East)",
+        "packaged_service _description": "TBS"
+    },
+    "epgProvider:st.12217684": {
+        "id_2.0": 69023272,
+        "call_sign": "ESPNHD",
+        "station_name": "ESPN HDTV",
+        "packaged_service _description": "ESPN"
+    },
+    "epgProvider:st.42623965": {
+        "id_2.0": 69026454,
+        "call_sign": "ESPN2HD",
+        "station_name": "ESPN2 HDTV",
+        "packaged_service _description": "ESPN2"
+    },
+    "epgProvider:st.182530764": {
+        "id_2.0": 69040139,
+        "call_sign": "ESPNDEPHD",
+        "station_name": "ESPN Deportes HDTV",
+        "packaged_service _description": "ESPN Deportes"
+    },
+    "epgProvider:st.233674757": {
+        "id_2.0": 317907415,
+        "call_sign": "BEIN1HD",
+        "station_name": "beIN Sports HDTV (English)",
+        "packaged_service _description": "BeIn Ingles"
+    },
+    "epgProvider:st.233726204": {
+        "id_2.0": 305598451,
+        "call_sign": "BEINHD",
+        "station_name": "beIN Sports HDTV (Spanish)",
+        "packaged_service _description": "BeIn Espa?ol"
+    },
+    "epgProvider:st.141222708": {
+        "id_2.0": 69032887,
+        "call_sign": "MLBNETHD",
+        "station_name": "MLB Network HDTV",
+        "packaged_service _description": "MLB Network"
+    },
+    "epgProvider:st.3564275": {
+        "id_2.0": 69023100,
+        "call_sign": "WIRS",
+        "station_name": "WIRS SonLife",
+        "packaged_service _description": "WIRS TV"
+    },
+    "epgProvider:st.11198784": {
+        "id_2.0": 69031470,
+        "call_sign": "NBATVHD",
+        "station_name": "NBA TV HDTV",
+        "packaged_service _description": "NBA TV"
+    },
+    "epgProvider:st.140343812": {
+        "id_2.0": 69030712,
+        "call_sign": "GOLFHD",
+        "station_name": "The Golf Channel HDTV",
+        "packaged_service _description": "Golf Channel"
+    },
+    "epgProvider:st.146641130": {
+        "id_2.0": 69030876,
+        "call_sign": "WAPADT2",
+        "station_name": "WAPA 2 Deportes HDTV",
+        "packaged_service _description": "Wapa 2 Deportes"
+    },
+    "epgProvider:st.111008803": {
+        "id_2.0": 69030967,
+        "call_sign": "SYFYHD-E",
+        "station_name": "Syfy HDTV",
+        "packaged_service _description": "SyFy"
+    },
+    "epgProvider:st.140197106": {
+        "id_2.0": 69031958,
+        "call_sign": "ETVHD-E",
+        "station_name": "E! Entertainment Television HDTV (East)",
+        "packaged_service _description": "E! Entertainment Television"
+    },
+    "epgProvider:st.111008804": {
+        "id_2.0": 69030779,
+        "call_sign": "BRAVOHD-E",
+        "station_name": "Bravo HDTV (East)",
+        "packaged_service _description": "bravo"
+    },
+    "epgProvider:st.75763224": {
+        "id_2.0": 69028671,
+        "call_sign": "A&EHD-E",
+        "station_name": "A&E Network HDTV",
+        "packaged_service _description": "A&E"
+    },
+    "epgProvider:st.73409074": {
+        "id_2.0": 69028270,
+        "call_sign": "FOODHD-E",
+        "station_name": "Food Network HDTV (East)",
+        "packaged_service _description": "Food Network"
+    },
+    "epgProvider:st.66692689": {
+        "id_2.0": 69027868,
+        "call_sign": "HGTVHD-E",
+        "station_name": "Home & Garden Television HDTV (East)",
+        "packaged_service _description": "HGTV"
+    },
+    "epgProvider:st.148140780": {
+        "id_2.0": 376897232,
+        "call_sign": "WCCVDT",
+        "station_name": "WCCV Tiva TV",
+        "packaged_service _description": "Cadena del Milagro (WCCV)"
+    },
+    "epgProvider:st.118123242": {
+        "id_2.0": 69031129,
+        "call_sign": "AMCHD-E",
+        "station_name": "AMC HDTV (East)",
+        "packaged_service _description": "AMC"
+    },
+    "epgProvider:st.149189260": {
+        "id_2.0": 69034109,
+        "call_sign": "truTVHD-E",
+        "station_name": "truTV HDTV (East)",
+        "packaged_service _description": "TruTV"
+    },
+    "epgProvider:st.160852717": {
+        "id_2.0": 666273343,
+        "call_sign": "FXXHD-E",
+        "station_name": "FXX HDTV (East)",
+        "packaged_service _description": "FXX"
+    },
+    "epgProvider:st.1859392": {
+        "id_2.0": 69042751,
+        "call_sign": "WUJA",
+        "station_name": "WUJA Pura Palabra TV",
+        "packaged_service _description": "Pura Palabra (WUJA) - off air"
+    },
+    "epgProvider:st.117692296": {
+        "id_2.0": 69031232,
+        "call_sign": "TRAVELHD-E",
+        "station_name": "Travel Channel HDTV (East)",
+        "packaged_service _description": "Travel Channel"
+    },
+    "epgProvider:st.107213906": {
+        "id_2.0": 69030687,
+        "call_sign": "TDCHD-E",
+        "station_name": "The Discovery Channel HDTV (East)",
+        "packaged_service _description": "Discovery US"
+    },
+    "epgProvider:st.361373834": {
+        "id_2.0": 942732992,
+        "call_sign": "APIHD",
+        "station_name": "Animal Planet HDTV (International)",
+        "packaged_service _description": "Animal Planet Latam"
+    },
+    "epgProvider:st.106639932": {
+        "id_2.0": 69030643,
+        "call_sign": "HISTHD-E",
+        "station_name": "History HDTV (East)",
+        "packaged_service _description": "The History Channel US"
+    },
+    "epgProvider:st.1859389": {
+        "id_2.0": 69042624,
+        "call_sign": "WECN",
+        "station_name": "WECN \u00danico TV",
+        "packaged_service _description": "WECN (local)"
+    },
+    "epgProvider:st.107213908": {
+        "id_2.0": 69030684,
+        "call_sign": "TLCHD-E",
+        "station_name": "The Learning Channel HDTV (East)",
+        "packaged_service _description": "TLC"
+    },
+    "epgProvider:st.159169748": {
+        "id_2.0": 69034809,
+        "call_sign": "HALLMARKHD-E",
+        "station_name": "Hallmark Channel HDTV (East)",
+        "packaged_service _description": "Hallmark"
+    },
+    "epgProvider:st.380759246": {
+        "id_2.0": 5227902184,
+        "call_sign": "HALLFAMHD",
+        "station_name": "Hallmark Family HDTV",
+        "packaged_service _description": "Hallmark Drama"
+    },
+    "epgProvider:st.121168819": {
+        "id_2.0": 69031566,
+        "call_sign": "FREEFORMHD-E",
+        "station_name": "Freeform HDTV (East)",
+        "packaged_service _description": "Freeform"
+    },
+    "epgProvider:st.2559629": {
+        "id_2.0": 69049762,
+        "call_sign": "DSTAR",
+        "station_name": "Daystar Television Network",
+        "packaged_service _description": "Daystar"
+    },
+    "epgProvider:st.124376605": {
+        "id_2.0": 69031037,
+        "call_sign": "TOONHD-E",
+        "station_name": "Cartoon Network HDTV (East)",
+        "packaged_service _description": "Cartoon Network"
+    },
+    "epgProvider:st.395032593": {
+        "id_2.0": 6517711421,
+        "call_sign": "DKLHD",
+        "station_name": "Discovery Kids HDTV (Latin America)",
+        "packaged_service _description": "Discovery Kids"
+    },
+    "epgProvider:st.121781104": {
+        "id_2.0": 69031412,
+        "call_sign": "DISNEYHD-E",
+        "station_name": "The Disney Channel HDTV (East)",
+        "packaged_service _description": "Disney Channel"
+    },
+    "epgProvider:st.1667980": {
+        "id_2.0": 69049289,
+        "call_sign": "BOOM-E",
+        "station_name": "Boomerang",
+        "packaged_service _description": "Boomerang"
+    },
+    "epgProvider:st.343464702": {
+        "id_2.0": 1407275563,
+        "call_sign": "SM56-LATE",
+        "station_name": "Stingray \u00c9xitos Regional Mexicanos",
+        "packaged_service _description": "Stingray Regional Mexican"
+    },
+    "epgProvider:st.343472631": {
+        "id_2.0": 432255619,
+        "call_sign": "SM66-LATE",
+        "station_name": "Stingray: Silk (Love Songs)",
+        "packaged_service _description": "Stingray Silk (LOVE SONGS)"
+    },
+    "epgProvider:st.343464706": {
+        "id_2.0": 1407275568,
+        "call_sign": "SM59-LATE",
+        "station_name": "Stingray \u00c9xitos de Salsa y Merengue",
+        "packaged_service _description": "Stingray Salsa/Merengue"
+    },
+    "epgProvider:st.343472629": {
+        "id_2.0": 432254331,
+        "call_sign": "SM100-LATE",
+        "station_name": "Stingray: Retro Latino",
+        "packaged_service _description": "Stingray Retro Latino"
+    },
+    "epgProvider:st.343464703": {
+        "id_2.0": 1407275564,
+        "call_sign": "SM57-LATE",
+        "station_name": "Stingray: Latin",
+        "packaged_service _description": "Stingray Latin"
+    },
+    "epgProvider:st.1859388": {
+        "id_2.0": 69042613,
+        "call_sign": "WDWL",
+        "station_name": "WDWL Teleadoraci\u00f3n Enlace Puerto Rico",
+        "packaged_service _description": "WDWL Teleadoracion"
+    },
+    "epgProvider:st.156687380": {
+        "id_2.0": 69038574,
+        "call_sign": "WIPRDT3",
+        "station_name": "PBS Kids",
+        "packaged_service _description": "Kids TV (WIPR-3)"
+    },
+    "epgProvider:st.215401113": {
+        "id_2.0": 69044944,
+        "call_sign": "DISJrHD-E",
+        "station_name": "Disney Jr. HDTV East",
+        "packaged_service _description": "Disney JR"
+    },
+    "epgProvider:st.148140796": {
+        "id_2.0": 69034024,
+        "call_sign": "WVXFDT",
+        "station_name": "WVXF Cozi TV",
+        "packaged_service _description": "This Caribbean (WVXF)"
+    },
+    "epgProvider:st.143236909": {
+        "id_2.0": 69037592,
+        "call_sign": "PASN",
+        "station_name": "Pasiones (USA)",
+        "packaged_service _description": "Pasiones"
+    },
+    "epgProvider:st.230818154": {
+        "id_2.0": 314530379,
+        "call_sign": "UNT-LAT",
+        "station_name": "Univisi\u00f3n tlnovelas",
+        "packaged_service _description": "Univision TL Novelas"
+    },
+    "epgProvider:st.361371010": {
+        "id_2.0": 1416384756,
+        "call_sign": "CRZONHD",
+        "station_name": "Coraz\u00f3n HDTV",
+        "packaged_service _description": "Azteca Corazon"
+    },
+    "epgProvider:st.367096028": {
+        "id_2.0": 4190725427,
+        "call_sign": "CANAL85",
+        "station_name": "Canal 85 (Puerto Rico)",
+        "packaged_service _description": "Media 85"
+    },
+    "epgProvider:st.405164662": {
+        "id_2.0": 5307683584,
+        "call_sign": "WQHAHD",
+        "station_name": "WQHA Nueva Vida HDTV",
+        "packaged_service _description": "WQHA - New"
+    },
+    "epgProvider:st.1958": {
+        "id_2.0": 69046887,
+        "call_sign": "UNVSO-E",
+        "station_name": "UNIVERSO (East)",
+        "packaged_service _description": "NBC Universo"
+    },
+    "epgProvider:st.1664005": {
+        "id_2.0": 69047760,
+        "call_sign": "VEI",
+        "station_name": "TVE Internacional (North & South America)",
+        "packaged_service _description": "TVE Espanola"
+    },
+    "epgProvider:st.332227235": {
+        "id_2.0": 1473777738,
+        "call_sign": "A3CINEC",
+        "station_name": "A3Cine",
+        "packaged_service _description": "A3Cine (Mis Peliculas)"
+    },
+    "epgProvider:st.62114300": {
+        "id_2.0": 69030284,
+        "call_sign": "DOMIN",
+        "station_name": "Televisi\u00f3n Dominicana",
+        "packaged_service _description": "Television Dominicana"
+    },
+    "epgProvider:st.95637129": {
+        "id_2.0": 69032440,
+        "call_sign": "TELEUNI",
+        "station_name": "Teleuniverso",
+        "packaged_service _description": "Teleuniverso"
+    },
+    "epgProvider:st.343476807": {
+        "id_2.0": 69027950,
+        "call_sign": "WSJP-LP",
+        "station_name": "WSJP Cozi HDTV",
+        "packaged_service _description": "WSJP - Cozi TV"
+    },
+    "epgProvider:st.343478125": {
+        "id_2.0": 69030396,
+        "call_sign": "BABYFIRSTTV",
+        "station_name": "BabyFirst TV",
+        "packaged_service _description": "Baby First TV"
+    },
+    "epgProvider:st.170289097": {
+        "id_2.0": 69037829,
+        "call_sign": "REELZHD",
+        "station_name": "ReelzChannel HDTV",
+        "packaged_service _description": "Reelz"
+    },
+    "epgProvider:st.117361138": {
+        "id_2.0": 69031128,
+        "call_sign": "WEHD-E",
+        "station_name": "Women's Entertainment HDTV (East)",
+        "packaged_service _description": "WE"
+    },
+    "epgProvider:st.174779607": {
+        "id_2.0": 69038908,
+        "call_sign": "OWNHD-E",
+        "station_name": "The Oprah Winfrey Network HDTV (East)",
+        "packaged_service _description": "OWN"
+    },
+    "epgProvider:st.175616077": {
+        "id_2.0": 69039042,
+        "call_sign": "OXYGENHD-E",
+        "station_name": "Oxygen HDTV",
+        "packaged_service _description": "Oxygen"
+    },
+    "epgProvider:st.51466647": {
+        "id_2.0": 69031379,
+        "call_sign": "HMMHD-E",
+        "station_name": "Hallmark Mystery HDTV",
+        "packaged_service _description": "Hallmark Movies & Mysteries"
+    },
+    "epgProvider:st.11820994": {
+        "id_2.0": 69042635,
+        "call_sign": "WELU-LP",
+        "station_name": "WELU Christian Television Network International",
+        "packaged_service _description": "WELU TV  - No DTA"
+    },
+    "epgProvider:st.3489248": {
+        "id_2.0": 291843710,
+        "call_sign": "IDL",
+        "station_name": "Investigation Discovery (Latin America)",
+        "packaged_service _description": "ID Discovery Latam"
+    },
+    "epgProvider:st.187860696": {
+        "id_2.0": 69040267,
+        "call_sign": "NAI-LAT",
+        "station_name": "Nat Geo Mundo",
+        "packaged_service _description": "NatGeo Mundo"
+    },
+    "epgProvider:st.406912045": {
+        "id_2.0": 7294607344,
+        "call_sign": "CWINHD",
+        "station_name": "CW HD International",
+        "packaged_service _description": "The CW"
+    },
+    "epgProvider:st.79789870": {
+        "id_2.0": 69029333,
+        "call_sign": "EWTNSP",
+        "station_name": "Eternal Word Television en Espa\u00f1ol (U.S.)",
+        "packaged_service _description": "EWTN Espa?ol"
+    },
+    "epgProvider:st.391": {
+        "id_2.0": 69022750,
+        "call_sign": "EWTN",
+        "station_name": "Eternal Word Television Network",
+        "packaged_service _description": "EWTN Ingles"
+    },
+    "epgProvider:st.126082120": {
+        "id_2.0": 69031667,
+        "call_sign": "QVCHD",
+        "station_name": "Quality Value Convenience Network HDTV",
+        "packaged_service _description": "QVC"
+    },
+    "epgProvider:st.174244262": {
+        "id_2.0": 69037603,
+        "call_sign": "UKIDSHD",
+        "station_name": "Universal Kids HDTV",
+        "packaged_service _description": "Universal Kids"
+    },
+    "epgProvider:st.293596652": {
+        "id_2.0": 1838653608,
+        "call_sign": "ULTRAFAMSD",
+        "station_name": "Ultra Familia SD",
+        "packaged_service _description": "Ultra Familia SDn"
+    },
+    "epgProvider:st.343483553": {
+        "id_2.0": 69045990,
+        "call_sign": "ULTRAKIDZHD",
+        "station_name": "Ultra Kidz HDTV",
+        "packaged_service _description": "Ultra Kidz"
+    },
+    "epgProvider:st.3700602": {
+        "id_2.0": 69034219,
+        "call_sign": "DISNEYXDSA",
+        "station_name": "Disney XD Spanish Audio Only for Tru 2 Way",
+        "packaged_service _description": "Disney XD"
+    },
+    "epgProvider:st.164931567": {
+        "id_2.0": 69037619,
+        "call_sign": "DISCFAMHD",
+        "station_name": "Discovery Family Channel HDTV",
+        "packaged_service _description": "Discovery Family"
+    },
+    "epgProvider:st.177101278": {
+        "id_2.0": 69041215,
+        "call_sign": "SUNHD-E",
+        "station_name": "SundanceTV HDTV (East)",
+        "packaged_service _description": "Sundance"
+    },
+    "epgProvider:st.174439515": {
+        "id_2.0": 594756636,
+        "call_sign": "FXMOVIEHD",
+        "station_name": "FX Movie Channel HDTV",
+        "packaged_service _description": "FXM (Fox Movie)"
+    },
+    "epgProvider:st.119114326": {
+        "id_2.0": 69031131,
+        "call_sign": "IFCHD-E",
+        "station_name": "IFC HDTV (East)",
+        "packaged_service _description": "IFC"
+    },
+    "epgProvider:st.151168818": {
+        "id_2.0": 69034081,
+        "call_sign": "BBCAMHD-E",
+        "station_name": "BBC America HDTV (East)",
+        "packaged_service _description": "BBC America"
+    },
+    "epgProvider:st.330584485": {
+        "id_2.0": 1508210850,
+        "call_sign": "DLIFHD",
+        "station_name": "Discovery Life Channel in HDTV",
+        "packaged_service _description": "Discovery Life"
+    },
+    "epgProvider:st.138875833": {
+        "id_2.0": 69032621,
+        "call_sign": "CRIMEHD",
+        "station_name": "Crime and Investigation Network HDTV",
+        "packaged_service _description": "Crime & Investigation"
+    },
+    "epgProvider:st.128374663": {
+        "id_2.0": 69031743,
+        "call_sign": "DESTAMHD",
+        "station_name": "Destination America HDTV",
+        "packaged_service _description": "Destination America"
+    },
+    "epgProvider:st.2267": {
+        "id_2.0": 69046801,
+        "call_sign": "GAFAMILY-E",
+        "station_name": "Great American Family",
+        "packaged_service _description": "GAC"
+    },
+    "epgProvider:st.246277876": {
+        "id_2.0": 334443188,
+        "call_sign": "AHCHD",
+        "station_name": "American Heroes Channel HDTV",
+        "packaged_service _description": "American Heroes"
+    },
+    "epgProvider:st.61770505": {
+        "id_2.0": 69027385,
+        "call_sign": "MILH",
+        "station_name": "Military History Channel",
+        "packaged_service _description": "Military History"
+    },
+    "epgProvider:st.107213907": {
+        "id_2.0": 69030686,
+        "call_sign": "SCIENCEHD",
+        "station_name": "Science HDTV",
+        "packaged_service _description": "Discovery Science"
+    },
+    "epgProvider:st.114977823": {
+        "id_2.0": 69031086,
+        "call_sign": "FYIHD",
+        "station_name": "FYI HDTV",
+        "packaged_service _description": "FYI Network"
+    },
+    "epgProvider:st.155645289": {
+        "id_2.0": 69034666,
+        "call_sign": "VICEHD-E",
+        "station_name": "VICE HDTV",
+        "packaged_service _description": "Viceland"
+    },
+    "epgProvider:st.89266939": {
+        "id_2.0": 69026916,
+        "call_sign": "DTI",
+        "station_name": "Discovery Turbo International",
+        "packaged_service _description": "Discovery Turbo"
+    },
+    "epgProvider:st.344847245": {
+        "id_2.0": 69044746,
+        "call_sign": "TLC-LAE",
+        "station_name": "TLC SDTV (Latin America English)",
+        "packaged_service _description": "TLC Espa?ol"
+    },
+    "epgProvider:st.153523946": {
+        "id_2.0": 69034520,
+        "call_sign": "IDHD-E",
+        "station_name": "Investigation Discovery HDTV",
+        "packaged_service _description": "Investigation Discovery (US)"
+    },
+    "epgProvider:st.107213909": {
+        "id_2.0": 69030685,
+        "call_sign": "ANIMALHD-E",
+        "station_name": "Animal Planet HDTV (East)",
+        "packaged_service _description": "Animal Planet US"
+    },
+    "epgProvider:st.361371307": {
+        "id_2.0": 3272249009,
+        "call_sign": "TVESTRHD",
+        "station_name": "TVE Star HDTV",
+        "packaged_service _description": "Star"
+    },
+    "epgProvider:st.295144564": {
+        "id_2.0": 1136163551,
+        "call_sign": "ANT3INTHD",
+        "station_name": "Antena 3 HDTV (Internacional)",
+        "packaged_service _description": "Antena 3"
+    },
+    "epgProvider:st.393051299": {
+        "id_2.0": 6366297946,
+        "call_sign": "VMLHD-LAT",
+        "station_name": "ViendoMovies (East) HDTV",
+        "packaged_service _description": "Viendo Movies"
+    },
+    "epgProvider:st.326377636": {
+        "id_2.0": 1270959130,
+        "call_sign": "ATRESHD",
+        "station_name": "Atreseries HDTV",
+        "packaged_service _description": "Atres Series"
+    },
+    "epgProvider:st.337203332": {
+        "id_2.0": 927739133,
+        "call_sign": "HOLATVHD-US",
+        "station_name": "\u00a1Hola! TV HDTV (US)",
+        "packaged_service _description": "Hola TV"
+    },
+    "epgProvider:st.165011611": {
+        "id_2.0": 69037516,
+        "call_sign": "MAGNHD-E",
+        "station_name": "Magnolia Network HDTV [East]",
+        "packaged_service _description": "Do It Yourself (DIY)"
+    },
+    "epgProvider:st.168366747": {
+        "id_2.0": 69037729,
+        "call_sign": "COOKINGHD",
+        "station_name": "The Cooking Channel HDTV",
+        "packaged_service _description": "Cooking Channel"
+    },
+    "epgProvider:st.156596230": {
+        "id_2.0": 69037734,
+        "call_sign": "JEWELRYHD",
+        "station_name": "Jewelry Television HDTV",
+        "packaged_service _description": "Jewelry TV"
+    },
+    "epgProvider:st.378": {
+        "id_2.0": 69032483,
+        "call_sign": "CNNINT",
+        "station_name": "Cable News Network International",
+        "packaged_service _description": "CNN International"
+    },
+    "epgProvider:st.4577806": {
+        "id_2.0": 69049600,
+        "call_sign": "CNBCWORLDHD",
+        "station_name": "Consumer News & Business Channel World HDTV",
+        "packaged_service _description": "CNBC World News"
+    },
+    "epgProvider:st.361309930": {
+        "id_2.0": 4004622239,
+        "call_sign": "BBCWNAHD",
+        "station_name": "BBC News North America HDTV",
+        "packaged_service _description": "BBC World News"
+    },
+    "epgProvider:st.132007358": {
+        "id_2.0": 69031963,
+        "call_sign": "ESPNUHD",
+        "station_name": "ESPNU HDTV",
+        "packaged_service _description": "ESPNU"
+    },
+    "epgProvider:st.123556227": {
+        "id_2.0": 69031480,
+        "call_sign": "ESPNEWSHD",
+        "station_name": "ESPN News HDTV",
+        "packaged_service _description": "ESPN News"
+    },
+    "epgProvider:st.322275655": {
+        "id_2.0": 1134559517,
+        "call_sign": "SECHD",
+        "station_name": "SEC Network HDTV",
+        "packaged_service _description": "SEC Network"
+    },
+    "epgProvider:st.357641363": {
+        "id_2.0": 3927423009,
+        "call_sign": "FOXDEPHD-C",
+        "station_name": "Fox Deportes en Espa\u00f1ol HDTV (Caribbean w/Blackout)",
+        "packaged_service _description": "Fox Deportes"
+    },
+    "epgProvider:st.126874560": {
+        "id_2.0": 69031438,
+        "call_sign": "TENNISHD",
+        "station_name": "Tennis Channel HDTV",
+        "packaged_service _description": "The Tennis Channel"
+    },
+    "epgProvider:st.399825055": {
+        "id_2.0": 6832813340,
+        "call_sign": "LASHD-PR",
+        "station_name": "LAS HD (Puerto Rico)",
+        "packaged_service _description": "Latin American Sports (LAS)"
+    },
+    "epgProvider:st.234290129": {
+        "id_2.0": 314786257,
+        "call_sign": "TUDNHD",
+        "station_name": "Tu Deportes Network (TUDN) U.S. HDTV",
+        "packaged_service _description": "Univision Deportes"
+    },
+    "epgProvider:st.361371303": {
+        "id_2.0": 3272217017,
+        "call_sign": "AZCINEHD",
+        "station_name": "Azteca Cinema HDTV (Latinoamerica)",
+        "packaged_service _description": "AZ Cinema"
+    },
+    "epgProvider:st.255892294": {
+        "id_2.0": 3518456196,
+        "call_sign": "ULTRACINESD",
+        "station_name": "Ultra Cine",
+        "packaged_service _description": "Ultra Cine"
+    },
+    "epgProvider:st.343483618": {
+        "id_2.0": 69046433,
+        "call_sign": "ULTRACLASHD",
+        "station_name": "Ultra Cl\u00e1sico HDTV",
+        "packaged_service _description": "Ultra Clasico"
+    },
+    "epgProvider:st.341245565": {
+        "id_2.0": 69046435,
+        "call_sign": "ULTRAFILMHD",
+        "station_name": "Ultra Film HDTV",
+        "packaged_service _description": "Ultra Film"
+    },
+    "epgProvider:st.146504822": {
+        "id_2.0": 69033180,
+        "call_sign": "GRCINE",
+        "station_name": "Gran Cine",
+        "packaged_service _description": "Gran Cine"
+    },
+    "epgProvider:st.255892291": {
+        "id_2.0": 69045989,
+        "call_sign": "ULTRAFIESTA",
+        "station_name": "Ultra Fiesta HDTV",
+        "packaged_service _description": "Ultra Fiesta"
+    },
+    "epgProvider:st.255892292": {
+        "id_2.0": 1044322967,
+        "call_sign": "ULTRATAIN",
+        "station_name": "Ultra Tainment HDTV",
+        "packaged_service _description": "Ultra Tainment"
+    },
+    "epgProvider:st.133201840": {
+        "id_2.0": 69032015,
+        "call_sign": "WFNHD-US",
+        "station_name": "World Fishing Network HDTV (U.S.)",
+        "packaged_service _description": "World Fishing Network"
+    },
+    "epgProvider:st.171338946": {
+        "id_2.0": 310456628,
+        "call_sign": "SONYMOVIEHD",
+        "station_name": "Sony Movie Channel HD",
+        "packaged_service _description": "Sony Movies"
+    },
+    "epgProvider:st.6698707": {
+        "id_2.0": 69021678,
+        "call_sign": "MOTORTRHD",
+        "station_name": "Motor Trend HDTV",
+        "packaged_service _description": "Motortrend (Velocity HD )"
+    },
+    "epgProvider:st.345844437": {
+        "id_2.0": 3593286223,
+        "call_sign": "OCTV1HD",
+        "station_name": "One Caribbean Television HDTV",
+        "packaged_service _description": "One Caribbean TV"
+    },
+    "epgProvider:st.888066": {
+        "id_2.0": 69022151,
+        "call_sign": "HBOHD-E",
+        "station_name": "HBO HDTV (East)",
+        "packaged_service _description": "HBO"
+    },
+    "epgProvider:st.122716708": {
+        "id_2.0": 69031635,
+        "call_sign": "HBO2HD-E",
+        "station_name": "HBO 2 HDTV (East)",
+        "packaged_service _description": "HBO2"
+    },
+    "epgProvider:st.122716707": {
+        "id_2.0": 69031637,
+        "call_sign": "HBOSGHD-E",
+        "station_name": "HBO Signature HDTV (East)",
+        "packaged_service _description": "HBO Signature"
+    },
+    "epgProvider:st.122716705": {
+        "id_2.0": 69031636,
+        "call_sign": "HBOFHD-E",
+        "station_name": "HBO Family HDTV (East)",
+        "packaged_service _description": "HBO Family"
+    },
+    "epgProvider:st.123094419": {
+        "id_2.0": 69032527,
+        "call_sign": "HLH-LAT",
+        "station_name": "HBO Latino HDTV (East)",
+        "packaged_service _description": "HBO Latino"
+    },
+    "epgProvider:st.123094420": {
+        "id_2.0": 69031638,
+        "call_sign": "HBOCHD-E",
+        "station_name": "HBO Comedy HDTV (East)",
+        "packaged_service _description": "HBO Comedy"
+    },
+    "epgProvider:st.123094423": {
+        "id_2.0": 69031763,
+        "call_sign": "HBOZHD-E",
+        "station_name": "HBO Zone HDTV (East)",
+        "packaged_service _description": "HBO Zone"
+    },
+    "epgProvider:st.17788146": {
+        "id_2.0": 69023856,
+        "call_sign": "MAXHD-E",
+        "station_name": "Cinemax HDTV (East)",
+        "packaged_service _description": "Cinemax"
+    },
+    "epgProvider:st.122716709": {
+        "id_2.0": 69031640,
+        "call_sign": "MMAXHD-E",
+        "station_name": "More Max HDTV (East)",
+        "packaged_service _description": "More Max"
+    },
+    "epgProvider:st.123556219": {
+        "id_2.0": 69031641,
+        "call_sign": "AMXHD-E",
+        "station_name": "ActionMAX HDTV (East)",
+        "packaged_service _description": "Action Max"
+    },
+    "epgProvider:st.123556222": {
+        "id_2.0": 69031882,
+        "call_sign": "TMAXHD-E",
+        "station_name": "ThrillerMAX HDTV (East)",
+        "packaged_service _description": "Thriller Max"
+    },
+    "epgProvider:st.123556221": {
+        "id_2.0": 69032376,
+        "call_sign": "OUTMXHD",
+        "station_name": "Outer Max HDTV",
+        "packaged_service _description": "Outter Max"
+    },
+    "epgProvider:st.1729796": {
+        "id_2.0": 69021684,
+        "call_sign": "PARSHOHD-E",
+        "station_name": "Paramount+ with SHOWTIME HDTV (East)",
+        "packaged_service _description": "Showtime"
+    },
+    "epgProvider:st.111008800": {
+        "id_2.0": 69030993,
+        "call_sign": "SHO2HD-E",
+        "station_name": "Showtime 2 HDTV (East)",
+        "packaged_service _description": "Showtime2"
+    },
+    "epgProvider:st.134055098": {
+        "id_2.0": 69032257,
+        "call_sign": "SHOSCHD-E",
+        "station_name": "Showtime Showcase HDTV (East)",
+        "packaged_service _description": "Showcase"
+    },
+    "epgProvider:st.168173967": {
+        "id_2.0": 69037597,
+        "call_sign": "SHONEXTHD-E",
+        "station_name": "Showtime Next East HDTV (East)",
+        "packaged_service _description": "Showtime Next"
+    },
+    "epgProvider:st.133201842": {
+        "id_2.0": 69032259,
+        "call_sign": "SHOXHD-E",
+        "station_name": "Showtime Extreme HDTV (East)",
+        "packaged_service _description": "Showtime Extreme"
+    },
+    "epgProvider:st.18560197": {
+        "id_2.0": 69024055,
+        "call_sign": "TMCHD-E",
+        "station_name": "The Movie Channel HDTV (East)",
+        "packaged_service _description": "The Movie Channel"
+    },
+    "epgProvider:st.133201844": {
+        "id_2.0": 69032261,
+        "call_sign": "TMC2XHD-E",
+        "station_name": "The Movie Channel Xtra HDTV (East)",
+        "packaged_service _description": "The Movie Channel Xtra"
+    },
+    "epgProvider:st.356424222": {
+        "id_2.0": 3365467799,
+        "call_sign": "FLIXHD-E",
+        "station_name": "Flix HDTV (East)",
+        "packaged_service _description": "Flix"
+    },
+    "epgProvider:st.168173965": {
+        "id_2.0": 69037601,
+        "call_sign": "SHOWOMENHD-E",
+        "station_name": "Showtime Women HDTV (East)",
+        "packaged_service _description": "Showtime Women"
+    },
+    "epgProvider:st.1881": {
+        "id_2.0": 69047025,
+        "call_sign": "STARZ-E",
+        "station_name": "Starz (East)",
+        "packaged_service _description": "Starz"
+    },
+    "epgProvider:st.108977884": {
+        "id_2.0": 69030628,
+        "call_sign": "STARZEDHD-E",
+        "station_name": "STARZ Edge HD (East)",
+        "packaged_service _description": "Starz Edge"
+    },
+    "epgProvider:st.108977885": {
+        "id_2.0": 69030629,
+        "call_sign": "STARZKHD-E",
+        "station_name": "STARZ Kids & Family HD (East)",
+        "packaged_service _description": "Starz Kids & Family"
+    },
+    "epgProvider:st.163055058": {
+        "id_2.0": 69035051,
+        "call_sign": "STARZCINHD-E",
+        "station_name": "STARZ Cinema HD (East)",
+        "packaged_service _description": "Starz Cinema"
+    },
+    "epgProvider:st.167498998": {
+        "id_2.0": 69035062,
+        "call_sign": "STARZBKHD-E",
+        "station_name": "STARZ InBlack HD (East)",
+        "packaged_service _description": "Starz in Black"
+    },
+    "epgProvider:st.107901824": {
+        "id_2.0": 69030627,
+        "call_sign": "STARZCMHD-E",
+        "station_name": "STARZ Comedy HD (East)",
+        "packaged_service _description": "Starz! Comedy"
+    },
+    "epgProvider:st.22617986": {
+        "id_2.0": 69024152,
+        "call_sign": "ENCHD-E",
+        "station_name": "STARZ ENCORE HD (East)",
+        "packaged_service _description": "Starz Encore"
+    },
+    "epgProvider:st.301036229": {
+        "id_2.0": 793762748,
+        "call_sign": "ENCCLASSHD",
+        "station_name": "STARZ ENCORE Classic HD (East)",
+        "packaged_service _description": "Starz Encore Classics"
+    },
+    "epgProvider:st.370286116": {
+        "id_2.0": 4704700478,
+        "call_sign": "ENCWESTHD-E",
+        "station_name": "STARZ ENCORE Westerns (East) HDTV",
+        "packaged_service _description": "Starz Encore Westerns"
+    },
+    "epgProvider:st.300708408": {
+        "id_2.0": 793773839,
+        "call_sign": "ENCSUSHD",
+        "station_name": "STARZ ENCORE Suspense HD (East)",
+        "packaged_service _description": "Starz Encore Suspense"
+    },
+    "epgProvider:st.191438756": {
+        "id_2.0": 848435748,
+        "call_sign": "ENCBLACKHD-E",
+        "station_name": "STARZ ENCORE Black HD (East)",
+        "packaged_service _description": "Starz Encore Black"
+    },
+    "epgProvider:st.191438757": {
+        "id_2.0": 69040331,
+        "call_sign": "ENCACTHD-E",
+        "station_name": "STARZ ENCORE Action HD (East)",
+        "packaged_service _description": "Starz Encore Action"
+    },
+    "epgProvider:st.370638080": {
+        "id_2.0": 4704261570,
+        "call_sign": "ENCFAMHD-E",
+        "station_name": "STARZ ENCORE Family (East) HDTV",
+        "packaged_service _description": "Starz Encore Family"
+    },
+    "epgProvider:st.373484733": {
+        "id_2.0": 4704286690,
+        "call_sign": "ENCESP-HD",
+        "station_name": "STARZ ENCORE Espa\u00f1ol HDTV",
+        "packaged_service _description": "Starz Encore Espa?ol"
+    },
+    "epgProvider:st.406281942": {
+        "id_2.0": 7243726628,
+        "call_sign": "CURISSTRHD",
+        "station_name": "CuriosityStream HD",
+        "packaged_service _description": "curiosity"
+    },
+    "epgProvider:st.425585854": {
+        "id_2.0": 8807289331,
+        "call_sign": "SHOBETHD-E",
+        "station_name": "SHOxBET HDTV (East)",
+        "packaged_service _description": "Sho x Bet"
+    },
+    "epgProvider:st.367830905": {
+        "id_2.0": 3924949997,
+        "call_sign": "HDPPV+C-PR",
+        "station_name": "iNDemand High-Definition PPV (Blackout Puerto Rico)",
+        "packaged_service _description": null
+    },
+    "epgProvider:st.429989658": {
+        "id_2.0": 9200104419,
+        "call_sign": "BOXEOHD-TMP",
+        "station_name": "BOXEO HDTV (Premium Temporary)",
+        "packaged_service _description": "Boxing HD PPV"
+    },
+    "epgProvider:st.343463914": {
+        "id_2.0": 1000985716,
+        "call_sign": "BOXEOHD",
+        "station_name": "BOXEO HDTV",
+        "packaged_service _description": null
+    },
+    "epgProvider:st.467200321": {
+        "id_2.0": 12174865520,
+        "call_sign": "HDPPV2-PR",
+        "station_name": "iNDemand High-Definition PPV2 (Blackout Puerto Rico)",
+        "packaged_service _description": "HDPPV2"
+    },
+    "epgProvider:st.477592118": {
+        "id_2.0": 12974332703,
+        "call_sign": "HDPPV2-PREM",
+        "station_name": "iNDemand High-Definition PPV2 (Blackout Puerto Rico - Premium)",
+        "packaged_service _description": "HDPPV2-PREM"
+    },
+    "epgProvider:st.4028255": {
+        "id_2.0": 69048882,
+        "call_sign": "GAME-1",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": null
+    },
+    "epgProvider:st.4028256": {
+        "id_2.0": 69048883,
+        "call_sign": "GAME-2",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb2"
+    },
+    "epgProvider:st.4028257": {
+        "id_2.0": 69048884,
+        "call_sign": "GAME-3",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb3"
+    },
+    "epgProvider:st.4028258": {
+        "id_2.0": 69048885,
+        "call_sign": "GAME-4",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb4"
+    },
+    "epgProvider:st.4028259": {
+        "id_2.0": 69048886,
+        "call_sign": "GAME-5",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb5"
+    },
+    "epgProvider:st.4064838": {
+        "id_2.0": 69048887,
+        "call_sign": "GAME-6",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb6"
+    },
+    "epgProvider:st.4064839": {
+        "id_2.0": 69048888,
+        "call_sign": "GAME-7",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb7"
+    },
+    "epgProvider:st.4064840": {
+        "id_2.0": 69048889,
+        "call_sign": "GAME-8",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb8"
+    },
+    "epgProvider:st.5220019": {
+        "id_2.0": 69021465,
+        "call_sign": "GAME-9",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb9"
+    },
+    "epgProvider:st.6810355": {
+        "id_2.0": 69021747,
+        "call_sign": "GAME10",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb10"
+    },
+    "epgProvider:st.86048222": {
+        "id_2.0": 69029449,
+        "call_sign": "GAME11",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb11"
+    },
+    "epgProvider:st.86048223": {
+        "id_2.0": 69029450,
+        "call_sign": "GAME12",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb12"
+    },
+    "epgProvider:st.86048224": {
+        "id_2.0": 69029451,
+        "call_sign": "GAME13",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb13"
+    },
+    "epgProvider:st.86048225": {
+        "id_2.0": 69029452,
+        "call_sign": "GAME14",
+        "station_name": "NHL Center Ice & MLB Extra Innings",
+        "packaged_service _description": "mlb14"
+    },
+    "epgProvider:st.955118": {
+        "id_2.0": 69048472,
+        "call_sign": "TEAM1",
+        "station_name": "NBA League Pass",
+        "packaged_service _description": "NBA1"
+    },
+    "epgProvider:st.955119": {
+        "id_2.0": 69048473,
+        "call_sign": "TEAM2",
+        "station_name": "NBA League Pass",
+        "packaged_service _description": "NBA2"
+    },
+    "epgProvider:st.955120": {
+        "id_2.0": 69048474,
+        "call_sign": "TEAM3",
+        "station_name": "NBA League Pass",
+        "packaged_service _description": "NBA3"
+    },
+    "epgProvider:st.955121": {
+        "id_2.0": 69048475,
+        "call_sign": "TEAM4",
+        "station_name": "NBA League Pass",
+        "packaged_service _description": "NBA4"
+    },
+    "epgProvider:st.955122": {
+        "id_2.0": 69048476,
+        "call_sign": "TEAM5",
+        "station_name": "NBA League Pass",
+        "packaged_service _description": "NBA5"
+    },
+    "epgProvider:st.955123": {
+        "id_2.0": 69048498,
+        "call_sign": "TEAM6",
+        "station_name": "NBA League Pass/MLS Direct Kick",
+        "packaged_service _description": "NBA6"
+    },
+    "epgProvider:st.955124": {
+        "id_2.0": 69048499,
+        "call_sign": "TEAM7",
+        "station_name": "NBA League Pass/MLS Direct Kick",
+        "packaged_service _description": "NBA7"
+    },
+    "epgProvider:st.955125": {
+        "id_2.0": 69048500,
+        "call_sign": "TEAM8",
+        "station_name": "NBA League Pass/MLS Direct Kick",
+        "packaged_service _description": "NBA8"
+    },
+    "epgProvider:st.955126": {
+        "id_2.0": 69048501,
+        "call_sign": "TEAM9",
+        "station_name": "NBA League Pass/MLS Direct Kick",
+        "packaged_service _description": "NBA9"
+    },
+    "epgProvider:st.944355": {
+        "id_2.0": 69048504,
+        "call_sign": "TEAM10",
+        "station_name": "NBA League Pass/MLS Direct Kick",
+        "packaged_service _description": "NBA10"
+    },
+    "epgProvider:st.343472625": {
+        "id_2.0": 432252789,
+        "call_sign": "SM94-LATE",
+        "station_name": "Stingray: Hit List",
+        "packaged_service _description": "Stingray Hit List"
+    },
+    "epgProvider:st.343464690": {
+        "id_2.0": 1407275535,
+        "call_sign": "SM28-LAT",
+        "station_name": "Stingray: Hip Hop",
+        "packaged_service _description": "Stingray Hip Hop"
+    },
+    "epgProvider:st.343463935": {
+        "id_2.0": 1021388745,
+        "call_sign": "SM106-LATE",
+        "station_name": "Stingray: Dancefloor Fillers",
+        "packaged_service _description": "Stingray Dancefloor Fillers"
+    },
+    "epgProvider:st.343463937": {
+        "id_2.0": 1021405514,
+        "call_sign": "SM115-LATE",
+        "station_name": "Stingray: Dance Clubbin'",
+        "packaged_service _description": "Stingray Dance Clubbin"
+    },
+    "epgProvider:st.343472626": {
+        "id_2.0": 432253621,
+        "call_sign": "SM97-LATE",
+        "station_name": "Stingray: Reggaet\u00f3n",
+        "packaged_service _description": "Stingray Reggaeton"
+    },
+    "epgProvider:st.234886951": {
+        "id_2.0": 1407275565,
+        "call_sign": "SM58-LATE",
+        "station_name": "Stingray: Groove",
+        "packaged_service _description": "Stingray Groove"
+    },
+    "epgProvider:st.343472616": {
+        "id_2.0": 432244928,
+        "call_sign": "SM63-LATE",
+        "station_name": "Stingray: Jazz Latino",
+        "packaged_service _description": "Stingray Jazz Latino"
+    },
+    "epgProvider:st.343472834": {
+        "id_2.0": 631407408,
+        "call_sign": "SM108-LAT",
+        "station_name": "Stingray: Romance latino",
+        "packaged_service _description": "Stingray Romance Latino"
+    },
+    "epgProvider:st.343472620": {
+        "id_2.0": 432247451,
+        "call_sign": "SM86-LATE",
+        "station_name": "Stingray: The Chill Lounge",
+        "packaged_service _description": "Stingray The Chill Lounge"
+    },
+    "epgProvider:st.361370676": {
+        "id_2.0": 1021390173,
+        "call_sign": "SM108-LATE",
+        "station_name": "Stingray: Caribbean Dancehall",
+        "packaged_service _description": "Stingray Caribbean Dancehall"
+    },
+    "epgProvider:st.234886917": {
+        "id_2.0": 1407275550,
+        "call_sign": "SM43-LAT",
+        "station_name": "Stingray: Jammin' Reggae",
+        "packaged_service _description": "Stingray Jammin Reggae"
+    },
+    "epgProvider:st.343472632": {
+        "id_2.0": 432256625,
+        "call_sign": "SM67-LATE",
+        "station_name": "Stingray: Classic Rock",
+        "packaged_service _description": "Stingray Classic Rock"
+    },
+    "epgProvider:st.884632": {
+        "id_2.0": 1407275562,
+        "call_sign": "SM55-LATE",
+        "station_name": "Stingray: 60s",
+        "packaged_service _description": "Stingray 60s"
+    },
+    "epgProvider:st.343485419": {
+        "id_2.0": 69049802,
+        "call_sign": "SM6-LAT",
+        "station_name": "Stingray: Rock",
+        "packaged_service _description": "Stingray Rock"
+    },
+    "epgProvider:st.343472637": {
+        "id_2.0": 432259909,
+        "call_sign": "SM73-LATE",
+        "station_name": "Stingray: Headbangers",
+        "packaged_service _description": "Stingray Headbangers"
+    },
+    "epgProvider:st.324617098": {
+        "id_2.0": 69045241,
+        "call_sign": "SM135-LAT",
+        "station_name": "Stingray: Rock Pesado",
+        "packaged_service _description": "Hard Rock"
+    },
+    "epgProvider:st.343472638": {
+        "id_2.0": 432260249,
+        "call_sign": "SM75-LATE",
+        "station_name": "Stingray: Greatest Hits",
+        "packaged_service _description": "Stingray Greatest Hits"
+    },
+    "epgProvider:st.343472621": {
+        "id_2.0": 432248948,
+        "call_sign": "SM89-LATE",
+        "station_name": "Stingray: Adult Alternative",
+        "packaged_service _description": "Stingray Adult Alternative"
+    },
+    "epgProvider:st.343464686": {
+        "id_2.0": 1407275520,
+        "call_sign": "SM13-LAT",
+        "station_name": "Stingray: Rock alternativo",
+        "packaged_service _description": "Stingray Rock Alternativo"
+    },
+    "epgProvider:st.343472623": {
+        "id_2.0": 432252245,
+        "call_sign": "SM92-LATE",
+        "station_name": "Stingray: Pop Adult",
+        "packaged_service _description": "Stingray Pop Adult"
+    },
+    "epgProvider:st.37283057": {
+        "id_2.0": 432259369,
+        "call_sign": "SM71-LATE",
+        "station_name": "Stingray: Nothing but 90's",
+        "packaged_service _description": "Stingray Nothing but 90's"
+    },
+    "epgProvider:st.343472634": {
+        "id_2.0": 432259144,
+        "call_sign": "SM70-LATE",
+        "station_name": "Stingray: Everything 80's",
+        "packaged_service _description": "Stingray Everything 80's"
+    },
+    "epgProvider:st.13779444": {
+        "id_2.0": 432258294,
+        "call_sign": "SM69-LATE",
+        "station_name": "Stingray: Flashback 70's",
+        "packaged_service _description": "Stingray Flashback 70's"
+    },
+    "epgProvider:st.343464707": {
+        "id_2.0": 1407275570,
+        "call_sign": "SM80-LATE",
+        "station_name": "Stingray: Jukebox Oldies",
+        "packaged_service _description": "Stingray Jukebox Oldies"
+    },
+    "epgProvider:st.343464793": {
+        "id_2.0": 1447330278,
+        "call_sign": "SM123-LATE",
+        "station_name": "Stingray: All Day Party",
+        "packaged_service _description": "Stingray Jukebox Oldies"
+    },
+    "epgProvider:st.234886939": {
+        "id_2.0": 432247231,
+        "call_sign": "SM85-LATE",
+        "station_name": "Stingray: 2000's",
+        "packaged_service _description": "Stingray 2000's"
+    },
+    "epgProvider:st.343472614": {
+        "id_2.0": 432244059,
+        "call_sign": "SM82-LATE",
+        "station_name": "Stingray: Around the World",
+        "packaged_service _description": "Stingray Around the World"
+    },
+    "epgProvider:st.348790853": {
+        "id_2.0": 1407275538,
+        "call_sign": "SM31-LAT",
+        "station_name": "Stingray: Maestros del jazz",
+        "packaged_service _description": "Jazz Masters"
+    },
+    "epgProvider:st.343472624": {
+        "id_2.0": 432252418,
+        "call_sign": "SM93-LATE",
+        "station_name": "Stingray: Pop Classics",
+        "packaged_service _description": "Stingray popclassicsstingray"
+    },
+    "epgProvider:st.343464692": {
+        "id_2.0": 1407275548,
+        "call_sign": "SM41-LAT",
+        "station_name": "Stingray \u00d3pera Plus",
+        "packaged_service _description": "Stingray Opera Plus"
+    },
+    "epgProvider:st.343472627": {
+        "id_2.0": 432254217,
+        "call_sign": "SM99-LATE",
+        "station_name": "Stingray: The Spa",
+        "packaged_service _description": "Stingray The Spa"
+    },
+    "epgProvider:st.343464705": {
+        "id_2.0": 1407275567,
+        "call_sign": "SM78-LATE",
+        "station_name": "Stingray Christian Pop & Rock",
+        "packaged_service _description": "Stingray The Light (Pop Christian)"
+    },
+    "epgProvider:st.343472622": {
+        "id_2.0": 432251832,
+        "call_sign": "SM91-LATE",
+        "station_name": "Stingray: Nature",
+        "packaged_service _description": "Stingray Nature"
+    },
+    "epgProvider:st.302940997": {
+        "id_2.0": 1001084181,
+        "call_sign": "NOTIUNO",
+        "station_name": "NotiUno 630 AM",
+        "packaged_service _description": "Notiuno 630 AM"
+    },
+    "epgProvider:st.169356775": {
+        "id_2.0": 1001086267,
+        "call_sign": "FIDELITY957",
+        "station_name": "Fidelity 95.7 fm",
+        "packaged_service _description": "Fidelity 95.7 FM"
+    },
+    "epgProvider:st.343464753": {
+        "id_2.0": 1423005452,
+        "call_sign": "SALSOUL",
+        "station_name": "SalSoul",
+        "packaged_service _description": "Sal Soul 98 FM"
+    },
+    "epgProvider:st.302940992": {
+        "id_2.0": 1423005453,
+        "call_sign": "HOT102",
+        "station_name": "Hot 102",
+        "packaged_service _description": "Hot 102"
+    },
+    "epgProvider:st.343464755": {
+        "id_2.0": 1423005454,
+        "call_sign": "LA-X",
+        "station_name": "La-X",
+        "packaged_service _description": "La X 100.7"
+    },
+    "epgProvider:st.343464708": {
+        "id_2.0": 1407275571,
+        "call_sign": "SM81-LATE",
+        "station_name": "Stingray: New Age",
+        "packaged_service _description": "Stingray New Age"
+    },
+    "epgProvider:st.343483341": {
+        "id_2.0": 69045239,
+        "call_sign": "SM134-LAT",
+        "station_name": "Stingray: Smooth Jazz",
+        "packaged_service _description": "Stingray Smooth Jazz"
+    },
+    "epgProvider:st.343472628": {
+        "id_2.0": 432254293,
+        "call_sign": "SM64-LATE",
+        "station_name": "Stingray: Jazz Now",
+        "packaged_service _description": "Stingray Jazz Now"
+    },
+    "epgProvider:st.343472615": {
+        "id_2.0": 432244304,
+        "call_sign": "SM62-ALTE",
+        "station_name": "Stingray: The Blues",
+        "packaged_service _description": "Stingray The Blues"
+    },
+    "epgProvider:st.343472618": {
+        "id_2.0": 432246910,
+        "call_sign": "SM84-LATE",
+        "station_name": "Stingray: Swinging Standards",
+        "packaged_service _description": "Stingray Swinging Standards"
+    },
+    "epgProvider:st.343464709": {
+        "id_2.0": 1407275572,
+        "call_sign": "SM61-LATE",
+        "station_name": "Stingray: Easy Listening",
+        "packaged_service _description": "Stingray Easy Listening"
+    },
+    "epgProvider:st.343464699": {
+        "id_2.0": 1407275559,
+        "call_sign": "SM76-LATE",
+        "station_name": "Stingray: Classic Masters",
+        "packaged_service _description": "Stingray Classic Masters"
+    },
+    "epgProvider:st.343464695": {
+        "id_2.0": 1407275554,
+        "call_sign": "SM47-LAT",
+        "station_name": "Stingray: Latino urbano",
+        "packaged_service _description": "Stingray Latino Urbano"
+    },
+    "epgProvider:st.444288353": {
+        "id_2.0": 10283527236,
+        "call_sign": "STGRYLAT",
+        "station_name": "Stingray Today Latino",
+        "packaged_service _description": "Stingray Today's Latin Pop"
+    },
+    "epgProvider:st.343473212": {
+        "id_2.0": 69021759,
+        "call_sign": "GAL052L",
+        "station_name": "Stingray: Tropical",
+        "packaged_service _description": "Stingray Latino Tropical"
+    },
+    "epgProvider:st.317997055": {
+        "id_2.0": 1407275560,
+        "call_sign": "SM53-LATE",
+        "station_name": "Stingray: Total Hits - Spain",
+        "packaged_service _description": "stingraytotalhitspain"
+    },
+    "epgProvider:st.234886924": {
+        "id_2.0": 432259659,
+        "call_sign": "SM72-LATE",
+        "station_name": "Stingray: Total Hits - UK",
+        "packaged_service _description": "stingraytotalhitspain"
+    },
+    "epgProvider:st.199095407": {
+        "id_2.0": 69047434,
+        "call_sign": "LOCAL",
+        "station_name": "Local Access Programming",
+        "packaged_service _description": "4K Test Channel"
+    },
+    "epgProvider:st.456063494": {
+        "id_2.0": 11248457823,
+        "call_sign": "UNIMASHD-PR",
+        "station_name": "UniM\u00e1s HDTV (Puerto Rico)",
+        "packaged_service _description": null
+    },
+    "epgProvider:st.381604216": {
+        "id_2.0": 5537755080,
+        "call_sign": "THCSPHD",
+        "station_name": "The History Channel en Espa\u00f1ol HDTV",
+        "packaged_service _description": "History Espa?ol"
+    }
+}

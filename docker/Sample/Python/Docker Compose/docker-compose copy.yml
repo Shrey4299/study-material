@@ -1,0 +1,41 @@
+version: '3.9'
+services:
+  fin_platform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    command: uvicorn main:app --workers 4 --host 0.0.0.0
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+    ports:
+      - 8003:8000
+    # network_mode: host
+    env_file:
+      - fin.env
+  celery_worker:
+    build:
+      context: .
+      dockerfile: DockerCelery
+    command: celery -A celery_schedulers.celery_app worker --loglevel=info
+    restart: always
+    depends_on:
+      - redis
+    env_file:
+      - ./.env
+  celery_beat:
+    build:
+      context: .
+      dockerfile: DockerCelery
+    command: celery -A celery_schedulers.celery_app beat --loglevel=info
+    restart: always
+    depends_on:
+      - redis
+    env_file:
+      - ./.env
+  redis:
+    image: redis:latest
+    # network_mode: host
+    ports:
+    - 6379:6379
