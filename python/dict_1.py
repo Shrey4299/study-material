@@ -70,3 +70,48 @@ print("Created Dictionary with fromkeys():", created_dict)
 print("Last Inserted Pair using popitem():", last_inserted_pair)
 print("Age using setdefault():", age)
 print("Updated Dictionary using update():", my_dict)
+
+# sorted_dict = dict(sorted(map.items(), key=lambda item: (-item[1], item[0]))) sort by value then , alphabetically
+
+
+words = ["i","love","leetcode","i","love","coding"]
+
+map = {}
+
+for word in words:
+    map[word] = map.get(word, 0) + 1
+
+
+from collections import defaultdict
+
+# Example data
+data = {
+    "cherry": 3,
+    "apple": 3,
+    "elderberry": 2,
+    "banana": 2,
+    "date": 1,   
+}
+
+# Create a defaultdict of lists to hold arrays of strings for each frequency
+frequency_dict = defaultdict(list)
+
+# Populate the dictionary
+for string, freq in data.items():
+    frequency_dict[freq].append(string)
+    frequency_dict[freq].sort()
+
+# Convert defaultdict to a regular dict if needed
+# frequency_dict = dict(frequency_dict)
+
+print("Frequency Dictionary:")
+print(frequency_dict)
+
+
+# Flatten the frequency_dict values into a single sorted list of strings
+sorted_strings = []
+for freq in (frequency_dict.keys()):
+    sorted_strings.extend(frequency_dict[freq])
+
+print("Flat Sorted List of Strings:")
+print(sorted_strings)

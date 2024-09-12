@@ -23,6 +23,10 @@ my_list.extend([7, 8])
 # Inserting at a Specific Position
 my_list.insert(2, 10)
 
+# Removing from the End and adding to the beginning
+my_list.insert(0, 11)
+my_list.pop(0)
+
 # Removing Elements
 my_list.remove(4)
 popped_element = my_list.pop()
@@ -123,3 +127,18 @@ for x in range(2,3):
 for index, value in enumerate(nums):
     print(f"Index: {index}, Value: {value}")
 
+
+
+str_list = ["flower","flow","flight"]
+
+shortes = min( str_list , key=len)
+
+
+# nums[:] = final_part  To copy exactly
+# for i in range(len(digits)-1, -1, -1):   to iterate backward
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+
+intersection = set(list1).intersection(list2)
+print(intersection)

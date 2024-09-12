@@ -24,6 +24,7 @@ substring = my_string[1:4]
 # Changing Case
 upper_case = my_string.upper()
 lower_case = my_string.lower()
+reversed_string = my_string[::-1] 
 
 # Checking Substrings
 contains_hello = "Hello" in my_string

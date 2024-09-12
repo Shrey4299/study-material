@@ -174,6 +174,7 @@ ping -c 1 $site #ping to the site or server
 date  > all_files.txt (rewrite)
 pwd  >> all_files.txt (append)
 ping -c 1 $site &> /dev/null (not to print)
+lscpu    # To see the cpu information
 
 
 

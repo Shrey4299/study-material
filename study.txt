@@ -1,0 +1,25 @@
+python 
+dsa
+mutliprocessing
+
+django
+restframework
+
+
+oops
+lld
+hdd
+
+
+sql
+mongo
+
+s3
+cognito
+lamda
+rds
+
+linux
+commands
+shell scripting
+tmux

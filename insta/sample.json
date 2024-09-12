@@ -1,0 +1,18 @@
+{
+    "data": {
+        "xdt_api__v1__friendships__followers__connection": {
+            "edges": [],
+            "should_limit_list_of_followers": false,
+            "page_info": {
+                "end_cursor": "QVFDYXNHLXJIQV9lTjFqT0NwdVF2aG1hQ3hId1hzSjRVZHZ1Qk81eUVSQ3ZtVXJKd1kzRGlqWUFDVzVsejhpbnNDZjJPUW9pd25oWkQtU2tpa2ZGcDF5RQ==",
+                "has_next_page": true,
+                "has_previous_page": false,
+                "start_cursor": null
+            }
+        }
+    },
+    "extensions": {
+        "is_final": true
+    },
+    "status": "ok"
+}

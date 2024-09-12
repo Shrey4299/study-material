@@ -1,6 +1,19 @@
-node_modules
-venv
+# Ignore Python virtual environments
+venv/
+# Ignore Node.js modules
+node_modules/
 
+# macOS system files
 .DS_Store
 
-.idea/*
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore AWS keys (example: aws_keys.py)
+aws_keys.py
+aws_key.py
+/aws_keys
+aws_keys
+
+# Ignore Visual Studio Code settings
+.vscode/
