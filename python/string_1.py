@@ -133,3 +133,17 @@ for index, char in enumerate(my_string):
     print(f"Index {index}: {char}")
 
 
+def convert_int_to_binary(number):
+        binary = bin(number)[2:]
+        return binary.zfill(10)
+
+def convert_binary_to_int(binary_string):
+    return int(binary_string, 2)
+
+# Example usage
+convert_binary = convert_int_to_binary(number=10)
+print(convert_binary)  # Output: 0000001010
+print(convert_binary.count('1'))  # Output: 2
+
+converted_back_to_int = convert_binary_to_int(convert_binary)
+print(converted_back_to_int)  # Output: 10

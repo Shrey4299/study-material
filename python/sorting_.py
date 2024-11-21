@@ -18,7 +18,7 @@ list_of_dicts = [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 20}, {'nam
 sorted_list = sorted(list_of_dicts, key=lambda item: (-item['age'], item['name']))
 print("Sorted list of dictionaries by age:", sorted_list)
 
-# Example 3: Sorting a dictionary by values in ascending order
+# Example 3: Sorting a dictionary by values in ascending orderZ
 map = {'apple': 10, 'banana': 5, 'cherry': 7}
 sorted_dict = dict(sorted(map.items(), key=lambda item: item[1]))
 print("Sorted dictionary by values (ascending):", sorted_dict)

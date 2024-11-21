@@ -1,13 +1,23 @@
-from functools import reduce
+class Solution:
+    def maxLength(self, str):
+        
+        n = len(str)
 
+        stack = []
+        max_length = 0
 
-numbers = [1,2,3,4,5,6,7,8,9]
+        for i in range(n):
+            
+            if str[i] == '(':
+                stack.append(i)   
 
-squared_num = list(map(lambda x: x**2, numbers))
-print("Squared numbers:", squared_num)
+            else:
 
-even_num = list(filter(lambda x: x % 2 == 0, numbers))
-print("Even numbers:", even_num)
+                stack.pop()
 
-sum_of_numbers = reduce(lambda x, y: x + y, numbers)
-print("Sum of numbers:", sum_of_numbers)
+                if not stack:
+                    stack.append(i)
+
+                max_length = max(max_length, i - stack[-1])  
+
+        return max_length

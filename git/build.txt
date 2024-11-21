@@ -1,0 +1,10 @@
+1. move to dev branch take pull
+2. make another branch from dev (pre-qa-sept-20)
+3. push to that branch (pre-qa-sept-20)
+4. go to git make pr to qa branch
+5. see the files changed
+6. add reviewers
+7. pull and merge
+8. check git action status
+9. if failed go to server resolve the issue git action then re run git action
+10. if less storage doker prune

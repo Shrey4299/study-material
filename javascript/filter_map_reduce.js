@@ -225,3 +225,17 @@ console.log(evenNumbers); // Output: [2, 4, 6, 8, 10]
 const namees = ["Alice", "Bob", "Anna", "Charlie", "David"];
 const namesStartingWithA = namees.filter((name) => name.startsWith("A"));
 console.log(namesStartingWithA); // Output: ["Alice", "Anna"]
+
+
+sqaure_num = numbers.map((num) => num * num * num)
+
+console.log(sqaure_num); // [1, 4, 9, 16, 25]
+
+multi_3 = numberrs.filter((num) => num % 3 === 0);
+
+console.log(multi_3); // [3, 6, 9]
+
+
+addition = numberrs.reduce((sum, num) => sum + num, 0);
+
+console.log(addition); // 45

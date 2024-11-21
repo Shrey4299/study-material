@@ -1,0 +1,89 @@
+How to use vim and nano: 
+
+Vim Commands:
+=============
+1. **Opening a file**: 
+
+2. **Insert mode** (to start typing text):
+- Press `i` to enter **insert mode**.
+
+3. **Saving the file**:
+- Press `Esc` to exit **insert mode**.
+- Type `:w` and press `Enter` to save the file without quitting.
+- Type `:wq` and press `Enter` to save and quit.
+- To save and exit in one command, you can also use `ZZ` (without typing `:`).
+
+4. **Quitting vim**:
+- Type `:q` and press `Enter` to quit **if no changes** were made.
+- Type `:q!` and press `Enter` to quit **without saving**.
+
+5. **Undo and redo**:
+- Press `u` to undo the last change.
+- Press `Ctrl + r` to redo the last undone change.
+
+6. **Navigating in Normal Mode**:
+- Use arrow keys or:
+  - `h` to move left.
+  - `j` to move down.
+  - `k` to move up.
+  - `l` to move right.
+- Press `gg` to go to the start of the file.
+- Press `G` to go to the end of the file.
+- Press `:number` to jump to a specific line (e.g., `:5` for line 5).
+
+7. **Deleting text**:
+- `dd` deletes the entire line.
+- `x` deletes the character under the cursor.
+
+8. **Search for text**:
+- Press `/` followed by the search term and `Enter` to search forward.
+- Press `n` to go to the next occurrence.
+
+Nano Commands:
+==============
+1. **Opening a file**:
+
+2. **Saving the file**:
+- Press `Ctrl + O` to save the file.
+- Press `Enter` to confirm the filename.
+
+3. **Quitting nano**:
+- Press `Ctrl + X` to exit.
+- If there are unsaved changes, nano will ask if you want to save. Press `Y` to save, or `N` to discard changes.
+
+4. **Cutting and pasting text**:
+- Press `Ctrl + K` to cut a line.
+- Move to the desired location and press `Ctrl + U` to paste.
+
+5. **Undo and redo**:
+- Press `Alt + U` to undo the last action.
+- Press `Alt + E` to redo the last undone action.
+
+6. **Navigating**:
+- Use the arrow keys to move around the file.
+- Press `Ctrl + A` to move to the beginning of the current line.
+- Press `Ctrl + E` to move to the end of the current line.
+- Press `Ctrl + W` to search for a word or phrase.
+
+7. **Search for text**:
+- Press `Ctrl + W`, type the search term, and press `Enter`.
+- Press `Ctrl + W` again and `Enter` to find the next occurrence.
+
+
+proxy_read_timeout 600;
+        proxy_connect_timeout 600;
+        proxy_send_timeout 600;
+
+
+Important paths:
+==============
+
+sudo vi /etc/nginx/nginx.conf    
+sudo vi /var/log/nginx/access.log
+
+
+Important commands:
+==============
+
+
+docker

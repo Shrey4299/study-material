@@ -140,6 +140,16 @@ Foo.findAll({
   },
 });
 
+Foo.findAll(
+  {
+    where: {
+      rank: {
+        [Op.gt]: 23,
+      }
+    }
+  }
+)
+
 // ################ Simple UPDATE queries   ###############
 
 // Change everyone without a last name to "Doe"
@@ -245,3 +255,5 @@ findAll({
     },
   },
 });
+
+

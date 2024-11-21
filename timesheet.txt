@@ -1,0 +1,611 @@
+Questions
+================================================================
+
+1) user can CLOCK_IN clockout and submit  without selecting job
+
+
+3) no gps flow
+4) clocking time will be recorded when clockin clicked or sub division is selected
+5) unknown time track means it is not necessary to select job division and can submit
+6) is lunch should be stopped if he goes out of the sub division and start new job
+7) what happen if user not pause and go beyonds 2 miles
+8) all timesheet will be untracked if it is not selected any sub division
+9) switch job any time how it will appear and what if location dont matches
+10) how they will search for new job
+11) checkout while on break page 22
+12) untracked only he goes out and not second job
+13 total hour include in transit
+
+Flow
+================================================================
+1) clockin normally (checking no timesheet submitted, and valid hours )
+2) selecting multiple jobs storing this in job divisions in cache or ARRAY in new entry table ( new update division api and new entry table)
+2.a) if the location has only one job matches to the location , the timesheet will be of that subdivision
+2.b) if the location has multiple jobs of that location, the timesheet will subdivision first will be shown and user can start 
+4) from backend particular location has how many jobs selected by user and fronted will select the job division and start temp clocking
+6) for timesheet for particular job division it should have unlimited breaks stored in json
+7) new api to be created to store the breaks dinamically
+8) temp clockout if the user goes beyond 2 miles , clockout with that time that timesheet making it status temp_checkout
+9) create a new timesheet if the user starts with new sub division with , status temp_checkin , with all the priovous timesheet data (all subdivision)
+10) frontend will select the next job divsion in 2 minutes based on earlier preference if not it will be in untacked location
+11) new api to send all the timesheet for that day , for user to sync with the frontend 
+12) change in job divison with temp clock-out without going 2 miles from the location , checks the location and make entry with temp clock-in and temp clock-out previous one
+13) if finally clock-out make all timesheet status clocked out , show all timesheet for that user for that day with all data
+14) check all validation and timesheet rules and submit the data
+15) if submit make all timesheet state submitted and fill all data of timesheet lot phase and work completed for particular time sheet
+
+
+
+
+
+
+
+
+CHANGES
+================================================================
+================================================================
+
+
+Database
+================================================================
+
+old
+***
+
+class Timesheet_v2_schema(Base):
+    __tablename__ = "timesheet_v2"
+    timesheet_id = Column(String, primary_key=True)
+    emp_id = Column(String)
+    tenant_id = Column(String(length=40))
+    division = Column(String)
+    # emp_check_in_time = Column(DateTime(timezone=True), server_default=text("(now() at time zone 'utc')"), nullable=False)#Column(DateTime(timezone=True))
+    emp_check_in_time = Column(DateTime, nullable=True)
+    emp_check_in_image = Column(String)
+    emp_check_out_time = Column(DateTime, nullable=True)
+    emp_check_out_image = Column(String, nullable=True)
+    phase_id = Column(String, nullable=True)
+    work_list = Column(ARRAY(String), nullable=True)
+    lunch_start_time = Column(DateTime, nullable=True)
+    lunch_end_time = Column(DateTime, nullable=True)
+    emp_declaration = Column(JSON, nullable=True)
+    timesheet_submission_time = Column(DateTime, nullable=True)
+    timesheet_status = Column(
+        Enum(TimesheetStatusEnum), default=TimesheetStatusEnum.TO_BE_SUBMITTED
+    )
+    timesheet_state = Column(
+        Enum(TimesheetStateEnum), default=TimesheetStateEnum.CHECKEDIN
+    )
+    # Added additional fields for v2 timesheet apis
+    lunch2_start_time = Column(DateTime, nullable=True)
+    lunch2_end_time = Column(DateTime, nullable=True)
+    ot_hours = Column(Float, nullable=True)
+    dt_hours = Column(Float, nullable=True)
+    rt_hours = Column(Float, nullable=True)
+    mealcomp = Column(Boolean, default=False)
+    mealcomp2 = Column(Boolean, default=False)
+    total_work_hrs_day = Column(Float, nullable=True)
+    total_work_hours = Column(Float, nullable=True)
+    total_week_hours = Column(Float, nullable=True)
+    timesheet_status = Column(Enum(TimesheetStatusEnum),default=TimesheetStatusEnum.TO_BE_SUBMITTED)
+    timesheet_state = Column(Enum(TimesheetStateEnum),default=TimesheetStateEnum.CHECKEDIN)
+    flags = Column(JSONB, default=flags_default)
+    lot_list = Column(ARRAY(String), nullable=True)
+    timesheet_tz = Column(String, nullable=True)
+
+
+class TimesheetStateEnum(PythonEnum):
+    CHECKEDIN = "CHECKEDIN"
+    CHECKEDOUT = "CHECKEDOUT"
+
+
+new
+***
+
+class Timesheet_v2_schema(Base):
+    __tablename__ = "timesheet_v2"
+    id = Column(String, primary_key=True) --------------------------------
+    timesheet_job_id = Column(String) ------------------------------
+    timesheet_id = Column(String)
+    emp_id = Column(String)
+    tenant_id = Column(String(length=40))
+    division = Column(String)
+    # emp_check_in_time = Column(DateTime(timezone=True), server_default=text("(now() at time zone 'utc')"), nullable=False)#Column(DateTime(timezone=True))
+    emp_check_in_time = Column(DateTime, nullable=True)
+    emp_check_in_image = Column(String)
+    emp_check_out_time = Column(DateTime, nullable=True)
+    emp_check_out_image = Column(String, nullable=True)
+    phase_id = Column(String, nullable=True)
+    work_list = Column(ARRAY(String), nullable=True)
+    lunch_start_time = Column(DateTime, nullable=True)
+    lunch_end_time = Column(DateTime, nullable=True)
+    emp_declaration = Column(JSON, nullable=True)
+    timesheet_submission_time = Column(DateTime, nullable=True)
+    timesheet_status = Column(
+        Enum(TimesheetStatusEnum), default=TimesheetStatusEnum.TO_BE_SUBMITTED
+    )
+    timesheet_state = Column(
+        Enum(TimesheetStateEnum), default=TimesheetStateEnum.CHECKEDIN
+    )
+    # Added additional fields for v2 timesheet apis
+    lunch2_start_time = Column(DateTime, nullable=True)
+    lunch2_end_time = Column(DateTime, nullable=True)
+    ot_hours = Column(Float, nullable=True)
+    dt_hours = Column(Float, nullable=True)
+    rt_hours = Column(Float, nullable=True)
+    mealcomp = Column(Boolean, default=False)
+    mealcomp2 = Column(Boolean, default=False)
+    total_work_hrs_day = Column(Float, nullable=True)
+    total_work_hours = Column(Float, nullable=True)
+    total_week_hours = Column(Float, nullable=True)
+    flags = Column(JSONB, default=flags_default)
+    lot_list = Column(ARRAY(String), nullable=True)
+    timesheet_tz = Column(String, nullable=True)
+    all_subdivisions = Column(ARRAY(String), nullable=True) --------------------------------
+    break_start_time = Column(DateTime, nullable=True)------------------------
+    break_end_time = Column(DateTime, nullable=True)--------------------------------
+    timesheet_type = Column(
+        Enum(TimesheetTypeEnum), default=TimesheetTypeEnum.NORMAL ------------------------
+    )
+
+class TimesheetStateEnum(PythonEnum):
+    CHECKEDIN = "CHECKEDIN"
+    CHECKEDOUT = "CHECKEDOUT"
+    TEMP_CHECKEDIN = "TEMP_CHECKEDIN" --------------------------------
+    TEMP_CHECKEDOUT = "TEMP_CHECKEDOUT" ------------------------------
+    ON_BREAK = "ON_BREAK" -------------------------------- (new)
+    ON_LUNCH = "ON_LUNCH" --------------------------------
+
+class TimesheetTypeEnum(PythonEnum):
+
+    NORMAL = "NORMAL" --------------------------------
+    INTRASIT = "INTRASIT" --------------------------------
+
+API
+================================================================
+
+
+CLOCK_IN
+========
+
+old 
+***
+
+class Timesheet_create_v2(BaseModel):
+    emp_id: str
+    tenant_id: str
+    division: str = Field(description="Thi will be JobCode ID")
+    emp_check_in_time: str
+    emp_check_in_image: str
+    timesheet_id: Optional[str] = None
+
+1) basic data structuring
+1.a) create new timesheet with hex string as timesheet_id and data from payload
+2) check overlapping of the other timesheet
+3) validation of the job code data
+4) calculate lower and upper bound for that day
+5) validate the total hours of earlier timesheet is not more than 16 hours
+6) validate the face and upload_image_to_s3 files
+7) add all data in the timesheet like s3 link , phase_id, checkin time extra
+
+new
+***
+
+class Timesheet_create_v2(BaseModel):
+    emp_id: str
+    tenant_id: str
+    division: str = Field(description="Thi will be JobCode ID")
+    emp_check_in_time: str
+    emp_check_in_image: str
+    temp_check_in : Optional[bool] = False ----------------------------------------------------------------
+    timesheet_id: Optional[str] = None ----------------------------------------------------------------
+
+1) basic data structuring
+1.a) create timesheet a new timesheet entry (with new id , and timesheet_id, and job_id) ----------------------------------------------------------------
+1.b) depends on temp_check_in  (make new id , with the timesheet_id) if timesheet validation passed
+2) check overlapping of the other timesheet
+3) validation of the job code data 
+4) calculate lower and upper bound for that day
+5) validation of the other submitted timesheet for that day (should not present)
+6) validation of the to_be_submitted timesheet other than the current one 
+7) validate the total hours of earlier timesheet is not more than 16 hours
+8) check temp_check_in validate it can happen or not
+9) make timesheet_state TEMP_CHECKEDIN if temp_check_in
+9.a) validate subdivision with loacation and user choosed division and validate
+10) validate the face and upload_image_to_s3 files
+11) if sub division is none make it untracked
+12) add all data in the timesheet like s3 link , phase_id, checkin time and all_subdivisions data
+
+
+CLOCK_OUT
+========
+
+old 
+***
+class ClockOutV2(BaseModel):
+    timesheet_clockout_time : str
+    timesheet_id: str = Field(description="The timesheet id.")
+    emp_check_out_image: str = Field(description="The checkout image url.")
+    geo_tag_auto_clockout: Optional[bool] = Field(description="update the auto clockout flag based on geo location zone limit cross", default=False)
+    meta_data: Optional[str] = Field(description="meta data for force clock out")
+
+1) basic data structuring
+2) fetch the timesheet_data_old
+3) make validation on timesheet is correct or not
+4) calculate upper and lower bound for that day
+5) validate clock_out time
+6) check overlapping of the other timesheet
+7) if clockout_payload.geo_tag_auto_clockout is true make it auto clock out
+8) validate the face and upload_image_to_s3 files
+9) validate total hours more than 16 and make it trim the clockout time
+10) adjust the clockout time and lunch if lunch goes beyond lunch goes beyond it after trimmig
+10.a) update the lunch flag
+11) upload_image_to_s3 files and all update the data in timesheet make state CHECKEDOUT
+
+
+new 
+***
+class ClockOutV2(BaseModel):
+    timesheet_clockout_time : str
+    id: str = Field(description="primary_key") --------------------------------
+    timesheet_id: str = Field(description="The timesheet id.")
+    emp_check_out_image: str = Field(description="The checkout image url.")
+    geo_tag_auto_clockout: Optional[bool] = Field(description="update the auto clockout flag based on geo location zone limit cross", default=False)
+    meta_data: Optional[str] = Field(description="meta data for force clock out")
+    temp_checkout: Optional[bool] = False -----------------------------------
+    
+
+
+1) basic data structuring
+2) fetch the timesheet_data_old all should be checked out
+3) fetch the current timesheet with (id) it should be (either checked in , temp_checkin)
+4) calculate upper and lower bound for that day
+5) validate clock_out time
+6) check overlapping of the other timesheet
+7) if clockout_payload.geo_tag_auto_clockout and temp_checkout make the timesheet state TEMP_CHECKEDOUT ,break end
+8) validate the face and upload_image_to_s3 files
+9) validate total hours more than 16 and make it trim the clockout time ( all privious hours of the that timesheet_id, excluding all breaks )
+10) adjust the clockout time and lunch if lunch goes beyond lunch goes beyond it after trimmig
+10.a) update the lunch flag
+11) upload_image_to_s3 files and all update the data in timesheet 
+12) check all validation for temp_checkout (temp_checkin) and update the status TEMP_CHECKEDOUT
+13) if not temp_checkout timesheet make state CHECKEDOUT
+14) stop the break if present
+
+
+SUBMIT
+========
+
+old 
+***
+
+class SubmitTimesheetV2(BaseModel):
+    timesheet_submit_time : str
+    timesheet_id: str = Field(description="The timesheet id.")
+    work_list: List[str] = Field(description="The work list")
+    lunch_start_time: Union[str, None] = Field(description="The lunch start time.")
+    lunch2_start_time: Union[str, None] = Field(description="The lunch start time.")
+    lunch2_end_time: Union[str, None] = Field(description="The lunch end time.")
+    lunch_end_time: Union[str, None] = Field(description="The lunch end time.")
+    emp_declaration: Dict = Field(description="The Employee declaration.")
+    lot_number_list : List = Field(description="The List of String of Integers. Max 5 elements in the list.")
+    ckintime_updated_post_ckout: Union[str, None] = Field(description="The empoyee check in time.")
+    ckotime_updated_post_ckout: Union[str, None] = Field(description="The empoyee check out time.")
+
+
+1) basic data structuring
+2) validate employee declaration
+3.a) fetch the timesheet_data_old
+3.b) make validation on timesheet is correct or not
+4) validate submit_timesheet
+5) validate lot
+6) validate lunch should not go beyond clckin clockout
+7) check overlaping
+8) update lunch flag if changed lunch time
+9) validate total hours
+10) update flag if the clock in and clock out changed
+11) calculate rt ot dT
+12) calculate mealcomp1 and mealcomp2
+13) add all the data (meal_comp, rt , ot , dt, and make status SUBMITTED
+
+
+new 
+***
+
+class SubmitTimesheetV2(BaseModel):
+    timesheet_submit_time : str
+    timesheet_id: str = Field(description="The timesheet id.")
+    lunch_start_time: Union[str, None] = Field(description="The lunch start time.")
+    lunch2_start_time: Union[str, None] = Field(description="The lunch start time.")
+    lunch2_end_time: Union[str, None] = Field(description="The lunch end time.")
+    lunch_end_time: Union[str, None] = Field(description="The lunch end time.")
+    emp_declaration: Dict = Field(description="The Employee declaration.")
+    data:List[BaseTimesheetSubmit]
+
+class BaseTimesheetSubmit(BaseModel):
+    work_list: List[str] = Field(description="The work list")
+    id: str = Field(description="unique identifier')
+    lot_number_list : List = Field(description="The List of String of Integers. Max 5 elements in the list.")
+    ckintime_updated_post_ckout: Union[str, None] = Field(description="The empoyee check in time.")
+    ckotime_updated_post_ckout: Union[str, None] = Field(description="The empoyee check out time.")
+
+
+
+1) basic data structuring
+2) validate employee declaration
+3.a) fetch the timesheet_data_old
+3.b) make validation on timesheet is correct or not
+4) validate submit_timesheet( should be in lower and upper bound , should be more that clock out time and clockin time)
+5) validate lot
+6) validate lunch should not go beyond clckin clockout
+7) check overlaping
+8) update lunch flag if changed lunch time
+9) validate total hours( calculate total hours all timesheet with timesheet_id exclude lunch time, break time)
+10) for each BaseTimesheetSubmit iterate and check thier respective time 
+    10.a) update flag if the clock in and clock out changed
+    10.b) calculate rt ot dT 
+    10.c) calculate mealcomp1 and mealcomp2
+    10.d) add all the data (meal_comp, rt , ot , dt, and make status SUBMITTED)
+
+
+Lunch
+========
+
+old 
+***
+
+class Timehseet_lunch_schema(BaseModel):
+    timesheet_id:str
+    lunch1_start_time:Optional[datetime]
+    lunch1_end_time:Optional[datetime]
+    lunch2_start_time:Optional[datetime]
+    lunch2_end_time:Optional[datetime]
+
+1) fetch the timesheet and validate with timesheet id
+2) validate timesheet should be checkin
+3) validate atleast one minute after checkin for lunch start
+4) validate lunch start present for lunch end
+5) validate atleast one minute lunch break
+6) validate lunch2 start present for lunch end 2
+7) update the key in database which is passed in the specific timesheet
+
+new 
+***
+
+class Timehseet_lunch_schema(BaseModel):
+    timesheet_id:str
+    id:str
+    lunch1_start_time:Optional[datetime]
+    lunch1_end_time:Optional[datetime]
+    lunch2_start_time:Optional[datetime]
+    lunch2_end_time:Optional[datetime]
+
+
+1) fetch the timesheet and validate with timesheet id and id
+2) validate timesheet should be checkin or temp_check_in
+3) validate atleast one minute after checkin for lunch start
+4) validate lunch start present for lunch end in all the privious timesheet
+5) validate atleast one minute lunch break
+6) validate lunch2 start present for lunch end 2 in all the previous timesheet
+7) update the key in database which is passed in the specific timesheet_id and id
+
+
+
+Add/update All subdivision
+===================
+
+class Timehseet_break_schema(BaseModel):
+    timesheet_id:str
+    id:str
+    all_subdivisions: List[str] 
+
+1) fetch the timesheet and validate with timesheet id 
+2) validate timesheet should be checkin , temp_check_in
+2.b) validate timesheet should not be submitted
+3) iterate the all_subdivisions and check it is valid or not
+4) if all_subdivisions is correct then update the all_subdivisions field with the new subdivision array in all timesheet with that timesheet_id
+
+
+verify location
+================
+
+particaular job is in the 2 mile radius or not
+
+class Timehseet_verify_location_schema(BaseModel):
+    id:str
+    all_subdivisions: List[str] 
+
+get_job_dw_pcl
+================
+
+search_query - Optional
+longitude - 
+latitude -
+
+change job divsion
+================
+
+class Timehseet_Change_Job_schema(BaseModel):
+    timesheet_id:str
+    timesheet_job_id:str
+    id:str
+    type:str
+    division:str
+    phase_id:str
+    new_job_time:str
+
+1) fetch the timesheet and validate with timesheet id and id and timesheet_job_id
+2) validate timesheet should be checkin or temp_check_in
+3) should not be INTRASIT 
+4) total hours should be exceed 16 hrs ( if then clock out trimmed version)
+5) make it checked out (TEMP_CHECKEDOUT)
+5.a) if on break then stop the break
+7) create one new time sheet entry with same timesheet id with new id and timesheet_job_id 
+
+
+
+
+
+Break
+========
+
+new 
+***
+
+class Timehseet_break_schema(BaseModel):
+    timesheet_id:str
+    timesheet_job_id:str
+    id:str
+    break_start_time:Optional[datetime]
+    break_end_time:Optional[datetime]
+
+
+1) fetch the timesheet and validate with timesheet id and id and timesheet_job_id
+2) validate timesheet should be checkin or temp_check_in
+3) should not be INTRASIT 
+4) total hours should be exceed 16 hrs ( if then clock out trimmed version)
+5) break start should be more than checkin
+6) break end should be more than break start
+7) if break ends then create one new time sheet entry with same timesheet id and timesheet_job_id with new id
+7.a) if entry timesheet_state = 'TEMP_CHECKEDIN with emp_check_in_time given in the break end time and data like empId and othher will repeat
+
+
+Testcases
+*********
+
+1) timesheet should be checkedin or temp_check_in 
+2) if breaks is empty only break start 1 can be Added
+3) break should with the number properly
+  3.a) if empty break number should 1
+  3.b) break number always one more than previous
+4) start always less than clockin
+5) start always more  than preivious end
+6) in start if previous is there previous end should not be null
+7) end will always be more than start
+8) if start is null , end can not add
+9) break can not go beyond lower bound and upper bound of that da
+
+
+
+
+fetch_structure
+===============
+
+
+{
+    "success": true,
+    "message": "Timesheet",
+    "data": [
+        {
+            "timesheet_id": "0176011fd2fa4328a7749acedc2b48e3",
+            "all_subdivisions": ["division1", "division2", "division"],
+            "status": "TEMP_CHECKEDIN", ON_BREAK
+            "emp_id": "9880098",
+            "tenant_id": "TN001",
+            "lunch_start_time": null,
+            "lunch_end_time": null,
+            "emp_declaration": null,
+            "timesheet_submission_time": null,
+            "timesheet_status": "TO_BE_SUBMITTED",
+            "timesheet_state": "CHECKEDOUT",
+            "lunch2_start_time": null,
+            "lunch2_end_time": null,
+            "ot_hours": null,
+            "dt_hours": null,
+            "rt_hours": null,
+            "mealcomp": false,
+            "mealcomp2": false,
+            "total_work_hrs_day": 0.03333333333333333,
+            "total_work_hours": null,
+            "total_week_hours": null,
+            "flags": {
+                "auto_clock_out": false,
+                "lunch_end_time": false,
+                "lunch2_end_time": false,
+                "lunch_start_time": false,
+                "lunch2_start_time": false,
+                "geo_tag_auto_clockout": false
+            },
+            "timesheet_tz": "Asia/Calcutta",
+            "fetch_date": null,
+            "meta_data": "Timesheet ID not found",
+            "full_name": "ramya  ramya",
+            "emp_role": "CL",
+            "regular_hr": null,
+            "overtime_hr": null,
+            "double_time_hr": null,
+            "total_hr": null,
+            "meal_comp": false,
+            "day": null,
+            "lunch_data": [
+                {
+                    "start_time": null,
+                    "end_time": null,
+                    "meal_comp": false,
+                    "is_lunch_break": false,
+                    "disabled": true
+                },
+                {
+                    "start_time": null,
+                    "end_time": null,
+                    "meal_comp": false,
+                    "is_lunch_break": false,
+                    "disabled": false
+                }
+            ],
+            "is_ts_old": false,
+            "job_data": [
+                {
+                timesheet_job_id: 1,
+                type: "NORMAL",
+                "division": "ef268d6e7af34cff87aac6854566bd80",
+                "phase_id": "#5",
+                "work_list": null,
+                "lot_list": null,
+                "sub_division": "hsr",
+                "job_code": "K#5",
+                "geo_tag": {
+                    "job_code_latitude": "12.9121° N",
+                    "job_code_longitude": "77.6446° E"
+                },
+                "release_code": "K#5",
+                "release_number_type": "FIXED",
+                "work_hours": [
+                    {  
+                        "emp_check_in_time": "2024-10-21T14:12:00.001Z",
+                        "emp_check_in_image": "https://checkin-face-dev.s3.amazonaws.com/TN001_9880098",
+                        "emp_check_out_time": "2024-10-21T14:13:00.001Z",
+                        "emp_check_out_image": "https://checkout-face-dev.s3.amazonaws.com/TN001_9880098",
+                    }
+                ]
+                },
+                {                
+                timesheet_job_id: 1,
+                type: "INTRASIT",
+                "division": "",
+                "emp_check_in_time": "2024-10-21T14:12:00.001Z",
+                "emp_check_in_image": "https://checkin-face-dev.s3.amazonaws.com/TN001_9880098",
+                "emp_check_out_time": "2024-10-21T14:13:00.001Z",
+                "emp_check_out_image": "https://checkout-face-dev.s3.amazonaws.com/TN001_9880098",
+                "phase_id": "#5",
+                "work_list": null,
+                "lot_list": null,
+                "sub_division": "hsr",
+                "job_code": "K#5",
+                "geo_tag": {
+                    "job_code_latitude": "12.9121° N",
+                    "job_code_longitude": "77.6446° E"
+                },
+                "release_code": "K#5",
+                "release_number_type": "FIXED"}
+
+            ],
+        }
+    ],
+    "status_code": 200
+}
+
+
+
+
+
+clockin 00:00   break_start_time = 

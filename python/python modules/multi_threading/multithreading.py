@@ -28,24 +28,19 @@ response_data = [
     "https://via.placeholder.com/400",
 ]
 
-# Determine the number of CPUs (optional)
 cpus = cpu_count()
 print(f"Number of CPUs available: {cpus}")
 
 # Start timing
 start_time = time.time()
 
+
+thread_pool_size = cpu
+
 # Using ThreadPool to process images in parallel
-with ThreadPool(12) as pools:  # Adjust the number of threads as needed
-    results = pools.map(get_size_img, response_data)
-    pools.close()
+with ThreadPool(thread_pool_size) as pool:
+    results = pool.map(get_size_img, response_data)
+    pool.close()
 
-# Stop timing
 end_time = time.time()
-
-# Displaying the results
-print("All image sizes:", results)
-
-# Print the execution time
-execution_time = end_time - start_time
-print(f"Execution Time: {execution_time:.2f} seconds")
+print(f"Processing time: {end_time - start_time}")

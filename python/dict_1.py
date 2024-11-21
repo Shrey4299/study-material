@@ -115,3 +115,15 @@ for freq in (frequency_dict.keys()):
 
 print("Flat Sorted List of Strings:")
 print(sorted_strings)
+
+
+role = {
+    "sp" : "supervisor",
+    "hr" : "hiring manager",
+}
+
+print(role)
+
+role_reverse = { v:k for k, v in role.items()}
+
+print(role_reverse)
