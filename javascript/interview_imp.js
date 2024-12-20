@@ -121,15 +121,44 @@ numbers.sort((a, b) => a - b);
 const newArray = [...arr];
 console.log(numbers);
 
-// db.models.find(
-//     {
-//         $or: [
-//             { name: "shrey" },
-//             { age: { $gte: 20, $lte: 30 } }
-//         ]
-//     },
-//     { _id: 0, name: 1, country: 1 }
-// )
-// .sort({ name: -1 })
-// .limit(100)
-// .skip(20)
+db.models.find(
+    {
+        $or: [
+            { name: "shrey" },
+            { age: { $gte: 20, $lte: 30 } }
+        ]
+    },
+    { _id: 0, name: 1, country: 1 }
+)
+.sort({ name: -1 })
+.limit(100)
+.skip(20)
+
+Foo.findAll(
+  {
+    where: {
+      rank: {
+        [Op.gt]: 23,
+      }
+    }
+  }
+)
+
+const foosWithOperatorExample = await Foo.find({
+  $or: [
+    {
+      rank: {
+        $lt: 1000,
+        $eq: null,
+      },
+    },
+    {
+      $or: [{ title: { $regex: /^Boat/ } }, { description: { $regex: /boat/ } }],
+    },
+  ],
+});
+
+// SELECT students.name, classes.class_name
+// FROM students
+// JOIN classes
+// ON students.class_id = classes.class_id;
