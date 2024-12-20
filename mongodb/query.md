@@ -78,3 +78,21 @@ $replaceRoot -- Replaces the input document with the specified document.
 $sample -- Randomly selects documents from a collection.
 $sort -- Sorts documents based on specified fields.
 $unwind -- Deconstructs an array field from the input documents to output a document for each element.
+
+
+examples
+
+1)
+
+db.models.find(
+    {
+        $or: [
+            { name: "shrey" },
+            { age: { $gte: 20, $lte: 30 } }
+        ]
+    },
+    { _id: 0, name: 1, country: 1 }
+)
+.sort({ name: -1 })
+.limit(100)
+.skip(20)

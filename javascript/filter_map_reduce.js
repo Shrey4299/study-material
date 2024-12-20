@@ -239,3 +239,53 @@ console.log(multi_3); // [3, 6, 9]
 addition = numberrs.reduce((sum, num) => sum + num, 0);
 
 console.log(addition); // 45
+
+
+Array.prototype.myMap = function (callback) {
+    const result = [];
+    for (let i = 0; i < this.length; i++) {
+        if (true) {
+            result.push(callback(this[i], i, this));
+        }
+    }
+    return result;
+};
+
+// Example usage:
+const numbers2 = [1, 2, 3];
+const doubled = numbers2.myMap(num => num * 2);
+console.log(doubled); // Output: [2, 4, 6]
+
+
+Array.prototype.myFilter = function (callback) {
+    const result = [];
+    for (let i = 0; i < this.length; i++) {
+        if (this.hasOwnProperty(i) && callback(this[i], i, this)) {
+            result.push(this[i]);
+        }
+    }
+    return result;
+};
+
+// Example usage:
+const numbers3 = [1, 2, 3, 4];
+const even = numbers3.myFilter(num => num % 2 === 0);
+console.log(even); // Output: [2, 4]
+
+
+Array.prototype.myReduce = function (callback, initialValue) {
+    let accumulator = initialValue !== undefined ? initialValue : this[0];
+    let startIndex = initialValue !== undefined ? 0 : 1;
+
+    for (let i = startIndex; i < this.length; i++) {
+        if (this.hasOwnProperty(i)) {
+            accumulator = callback(accumulator, this[i], i, this);
+        }
+    }
+    return accumulator;
+};
+
+// Example usage:
+const numbers4 = [1, 2, 3, 4];
+const sum4 = numbers4.myReduce((acc, num) => acc + num, 0);
+console.log(sum4); // Output: 10

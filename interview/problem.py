@@ -7,14 +7,4 @@ l = [8,5,3,1,6,8,3,2,7,9,1,8]
 
 repeated = []
 
-freq = defaultdict(int)
-
-for x in l:
-    if freq[x] == 1:
-        repeated.append(x)
-    freq[x] += 1
-
-
-print(repeated)
-
 
